@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.menu {
+    height: 70px;
+    width: 100%;
+    color: black;
+    background-color: rgb(41, 41, 41);
+}
+
+.menu ul {
+    display: inline-flex;
+    float: right;
+    font-size: 20px;
+    color: gray;
+}
+
+.menu ul li {
+    display: inline-flex;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.content {
+    width: 80%;
+    height: 70%;
+    top: 5%;
+    left: 50px;
+    position: relative;
+    color: grey;
+}
+
+.app_text {
+    float: left;
+}
+
+.app_text h1 {
+    font-size: 40px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.app_text p {
+    font-size: 20;
+    position: relative;
+}
+
+.app_text a {
+    font-size: 20px;
+    position: relative;
+    margin-left: 20px;
+}
