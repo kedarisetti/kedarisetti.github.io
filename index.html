@@ -5,36 +5,59 @@
     <link rel="stylesheet" , href="style.css">
 </head>
 
-<body>
-    <div class="container">
-        <div class="menu">
+<body id="pagetop">
+    <div class="topbar">
+        <div class=logo> <a href="#pagetop"> Kedarisetti </a></div>
+        <div class="navbar">
             <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Media</li>
-                <li>About</li>
+                <li><a href="#projects">Projects </a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </div>
-        <div class="content">
-            <div class="app_text">
-                <h1>
-                    Building a webpage with HTML and CSS
-                </h1>
-                <br>
-                <br>
-                <p>
-                    Getting started:
-                    <br> This is an experiment to see if a simple website can be hosted on Github using simpleHTML and CSS
-                    <br> Steps followed to make the website is to create a html page (The current one I am in) and make it look good
-                    <br> Create HTML, CSS files, and reference the css in the html page
-                    <br> 1. Creating a menu bar
-                    <br> 2. Creating a content section
-                    <br>
-                </p>
-
+    </div>
+    <section class="intro">
+        <div class="intro-content">
+            <h1>Hello World!</h1>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="row">
+                <H2>Federated Learning</H2>
+                <br/> Federated learning using Javascript
+            </div>
+            <br/>
+            <br/>
+            <div class="row">
+                <h2>Action Recognition</h2>
+                <br/>Action recognition using 3D cnn's
+            </div>
+            <br/>
+            <br/>
+            <div class="row">
+                <h2>Advanced Math</h2>
+                <br/>Re-Learning math
             </div>
         </div>
-
+    </section>
+    <section class="media" id="media">
+        <div class="container">
+            <div class="row">
+                <h1><a href="https://500px.com/p/dharanish_90">Photography </a></h1>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <a href="https://github.com/kedarisetti"><img src="GitHub-Mark-120px-plus.png" style="max-width:75px;">
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class=footer>
+        &copy; Copyright 2010 by <a href="https://kedarisetti.github.io/">Kedarisetti</a>
     </div>
 
 </body>

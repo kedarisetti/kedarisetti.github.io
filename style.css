@@ -4,58 +4,122 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-}
-
-.menu {
+.topbar {
     height: 70px;
     width: 100%;
-    color: black;
     background-color: rgb(41, 41, 41);
+    position: fixed;
+    display: inline;
+    top: 0;
+    overflow: hidden;
 }
 
-.menu ul {
+.logo {
+    float: left;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 20px;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar ul {
     display: inline-flex;
     float: right;
     font-size: 20px;
     color: white;
 }
 
-.menu ul li {
+.navbar ul li {
     display: inline-flex;
     margin: 25px;
     cursor: pointer;
 }
 
-.content {
-    width: 80%;
-    height: 70%;
-    top: 5%;
-    left: 50px;
-    position: relative;
-    color: black;
+.intro {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    align-items: center;
+    background-color: antiquewhite;
 }
 
-.app_text {
-    float: left;
+.intro-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
 }
 
-.app_text h1 {
-    font-size: 40px;
-    position: relative;
-    margin-left: 10px;
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
 }
 
-.app_text p {
-    font-size: 20;
-    position: relative;
+@media (min-width:750px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 }
 
-.app_text a {
-    font-size: 20px;
-    position: relative;
-    margin-left: 20px;
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    text-align: center;
+}
+
+.projects {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(89, 128, 167);
+}
+
+.media {
+    background-color: rgb(155, 138, 114);
+}
+
+.about {
+    background-color: grey;
+}
+
+.about-content {
+    align-items: center;
+    text-align: center;
+    top: 50%;
+}
+
+.navbar {
+    width: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.footer {
+    color: white;
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 40px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
