@@ -1,2 +1,2 @@
 # Personal website
-Code for website at http://kedarisetti.github.io/
+Code for website at https://kedarisetti.github.io/
