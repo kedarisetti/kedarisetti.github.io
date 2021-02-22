@@ -29,26 +29,21 @@ function automaton_data(ruleno) {
 
 function gridData(data_old) {
     var data = new Array();
-    var xpos = 0; //starting xpos and ypos at 1 so the stroke will show when we make the grid below
+    var xpos = 0; 
     var ypos = 0;
 
-    // iterate for rows 
     for (var row of data_old.keys()) {
         data.push( new Array() );
 
-        // iterate for cells/columns inside rows
         for (var column of data_old[0].keys()) {
             data[row].push({
                 x: xpos,
                 y: ypos,
                 value : data_old[row][column]                
             })
-            // increment the x position. I.e. move it over by 50 (width variable)
             xpos += 1;
         }
-        // reset the x position after a row is complete
         xpos = 0;
-        // increment the y position for the next row. Move it down 50 (height variable)
         ypos += 1; 
     }
     return data;
