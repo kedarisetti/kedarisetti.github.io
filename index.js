@@ -1,8 +1,3 @@
-function randomLetters() {
-    return d3.shuffle("abcdefghijklmnopqrstuvwxyz".split(""))
-      .slice(0, Math.floor(6 + Math.random() * 20))
-      .sort();
-  }
 
 function automaton_data(ruleno) {
     var map = rule_map(ruleno);
