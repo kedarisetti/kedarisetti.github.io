@@ -9,9 +9,8 @@
     width: 100%;
     background-color: rgb(41, 41, 41);
     position: fixed;
-    display: inline;
     top: 0;
-    overflow: hidden;
+    z-index: 999;
 }
 
 .logo {
@@ -43,6 +42,7 @@
     width: 100%;
     height: 100%;
     padding-bottom: 0%;
+    padding-top: 70px;
     align-items: center;
     background-color: antiquewhite;
 }
@@ -54,7 +54,6 @@
     transform: translateY(-50%);
     transform: translateX(-50%);
     text-align: center;
-    z-index: 1;
     background-color: black;
     color: rgb(255, 255, 255);
 }
