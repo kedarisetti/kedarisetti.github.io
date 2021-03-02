@@ -10,12 +10,12 @@ function automaton_data(ruleno) {
         var inputs = data.slice(-1)[0];
         var outputs = []
         for (const x of inputs.keys()){
-            var ink = inputs.slice(x-1,x+2).join("");
-            out = '0';
-            if (map[ink]){
-                out = map[ink];
-            }
-            outputs.push(out);
+            var ink = [
+                inputs[ (x + inputs.length -1) % inputs.length],
+                inputs[ (x + inputs.length) % inputs.length],
+                inputs[ (x + inputs.length +1) % inputs.length]
+            ].join("");
+            outputs.push(map[ink]);
         }
         data.push(outputs);    
     }
