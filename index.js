@@ -73,8 +73,8 @@ var cellular_automaton = function(){
         .attr("y", function(d) { return d.y * cellSize -buffer  ; })
         .attr("width", function(d) { return cellSize; })
         .attr("height", function(d) { return cellSize; })
-        .style("fill", function(d) {  if (d.value == 1){return '"#fff"' }else { return "rgb(253 253 253)"}})
-        .style("stroke", "#222");
+        .style("fill", function(d) {  if (d.value == 1){return "rgb(250 235 215)" } else { return "rgb(255 255 255)"}})
+        .style("stroke", "#faebd7");
     
     
     
