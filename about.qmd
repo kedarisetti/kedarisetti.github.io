@@ -43,4 +43,4 @@ Video analytics framework development focused on unusual activity detection in C
 
 ## Links
 
-[GitHub](https://github.com/kedarisetti)
+[GitHub](https://github.com/kedarisetti) · [LinkedIn](https://www.linkedin.com/in/dharanish-kedarisetti/)
