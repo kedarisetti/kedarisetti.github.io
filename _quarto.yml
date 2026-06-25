@@ -3,8 +3,8 @@ project:
   output-dir: _site
 
 website:
-  title: "Alu Toast"
-  description: "Set of all tasty things"
+  title: "Parallax"
+  description: "Dharanish Kedarisetti"
   site-url: "https://kedarisetti.github.io"
   navbar:
     left:

@@ -1,5 +1,5 @@
 ---
-title: "Alu Toast"
+title: "Parallax"
 listing:
   contents: posts
   sort: "date desc"

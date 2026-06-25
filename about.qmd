@@ -2,27 +2,21 @@
 title: "About Me"
 ---
 
-I am **Dharanish Kedarisetti**, based in Boston. I work on **Machine Learning** and **Perception** at [Motorola Solutions](https://www.motorolasolutions.com/), building smart cameras.
+I am **Dharanish Kedarisetti**, based in Boston. I am a **Machine Learning Engineer** on the Dash Carts science team at [Amazon](https://www.amazon.science/).
 
 Interests: Machine Learning, Climbing, Meditation, and [Photography](https://500px.com/p/dharanish_90).
-
-## Projects
-
-**Federated Learning** — Federated learning using JavaScript
-
-**Action Recognition** — Action recognition using 3D CNNs
-
-**Advanced Math** — Re-learning math from the ground up
 
 ## Patents
 
 - [WO2021026642A1](https://patents.google.com/patent/WO2021026642A1/) — **Method and System for Enhancing Use of Two-Dimensional Video Analytics by Using Depth Data** (Avigilon Corp, 2021). Improves 2D video analytics by fusing depth data to validate object classifications, correcting for shadows, reflections, and distance-based size distortions. With Pietro Russo, Peter L. Venetianer, Mahesh Saptharishi.
 
-- [WO2021225814A1](https://patents.google.com/patent/WO2021225814A1/) — **Anomalous Pose Detection Method and System** (Motorola Solutions, 2021). Uses neural networks to generate skeletal pose vectors and flags deviations from learned normal-behavior clusters in real time. With Teresa Dankel, Patrick Henson, Aral Sarrafi.
+- [WO2021225814A1](https://patents.google.com/patent/WO2021225814A1/) / [US11386713B2](https://patents.google.com/patent/US11386713B2/en) — **Anomalous Pose Detection Method and System** (Motorola Solutions, granted 2022). Uses neural networks to generate skeletal pose vectors and flags deviations from learned normal-behavior clusters in real time. With Teresa Dankel, Patrick Henson, Aral Sarrafi.
 
 - [WO2020210504A1](https://patents.google.com/patent/WO2020210504A1/) / [US11302117B2](https://patents.google.com/patent/US11302117B2/en) — **Anomaly Detection Method, System and Computer Readable Medium** (Avigilon Corp / Motorola Solutions, granted 2022). Detects unusual behavior in surveillance video by modeling statistical baselines from object metadata (class, location, velocity) per scene cell — without processing raw frames. With Peter Venetianer.
 
 - [WO2020051704A1](https://patents.google.com/patent/WO2020051704A1/) — **System and Method for Improving Speed of Similarity Based Searches** (Avigilon Corp, 2020). Accelerates appearance-search queries by k-medoid clustering of selected feature vectors before database search, reducing compute without sacrificing result quality. With Nicholas John Alcock, Peter L. Venetianer.
+
+- [US12634398](https://patents.google.com/patent/US12634398/en) — **Method of Generating a Trigger Initiating an Emergency Incident Response Workflow** (Motorola Solutions, 2026). Receives emergency notification data and retrieves associated sensor data by time and location to automatically initiate incident response. With Emmy Beltre, Kaveh Malakuti, Mariya Bondareva.
 
 ## Papers
 
