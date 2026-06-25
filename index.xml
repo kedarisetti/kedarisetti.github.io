@@ -5,10 +5,10 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Alu Toast</title>
+<title>Parallax</title>
 <link>https://kedarisetti.github.io/</link>
 <atom:link href="https://kedarisetti.github.io/index.xml" rel="self" type="application/rss+xml"/>
-<description>Set of all tasty things</description>
+<description>Dharanish Kedarisetti</description>
 <generator>quarto-1.9.38</generator>
 <lastBuildDate>Thu, 25 Jun 2026 00:00:00 GMT</lastBuildDate>
 <item>
