@@ -1,0 +1,26 @@
+---
+title: "About Me"
+---
+
+I am **Dharanish Kedarisetti**, based in Boston. I work on **Machine Learning** and **Perception** at [Motorola Solutions](https://www.motorolasolutions.com/), building smart cameras.
+
+Interests: Machine Learning, Climbing, Meditation, and [Photography](https://500px.com/p/dharanish_90).
+
+## Projects
+
+**Federated Learning** — Federated learning using JavaScript
+
+**Action Recognition** — Action recognition using 3D CNNs
+
+**Advanced Math** — Re-learning math from the ground up
+
+## Patents
+
+- [WO2021026642A1](https://patents.google.com/patent/WO2021026642A1/) — Method and system for enhancing use of two-dimensional video analytics by using depth data
+- [WO2021225814A1](https://patents.google.com/patent/WO2021225814A1/) — Anomalous pose detection method and system
+- [WO2020051704A1](https://patents.google.com/patent/WO2020051704A1/) — System and method for improving speed of similarity based searches
+- [WO2020210504A1](https://patents.google.com/patent/WO2020210504A1/) — Anomaly detection method, system and computer readable medium
+
+## Links
+
+[GitHub](https://github.com/kedarisetti)

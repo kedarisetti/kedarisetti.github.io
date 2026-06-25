@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Alu Toast"
+  description: "Set of all tasty things"
+  site-url: "https://kedarisetti.github.io"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+  page-footer:
+    center: "© Dharanish Kedarisetti"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
