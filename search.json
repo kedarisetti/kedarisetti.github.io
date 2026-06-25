@@ -39,7 +39,14 @@
     "href": "about.html#patents",
     "title": "About Me",
     "section": "Patents",
-    "text": "Patents\n\nWO2021026642A1 — Method and system for enhancing use of two-dimensional video analytics by using depth data\nWO2021225814A1 — Anomalous pose detection method and system\nWO2020051704A1 — System and method for improving speed of similarity based searches\nWO2020210504A1 — Anomaly detection method, system and computer readable medium"
+    "text": "Patents\n\nWO2021026642A1 — Method and System for Enhancing Use of Two-Dimensional Video Analytics by Using Depth Data (Avigilon Corp, 2021). Improves 2D video analytics by fusing depth data to validate object classifications, correcting for shadows, reflections, and distance-based size distortions. With Pietro Russo, Peter L. Venetianer, Mahesh Saptharishi.\nWO2021225814A1 — Anomalous Pose Detection Method and System (Motorola Solutions, 2021). Uses neural networks to generate skeletal pose vectors and flags deviations from learned normal-behavior clusters in real time. With Teresa Dankel, Patrick Henson, Aral Sarrafi.\nWO2020210504A1 / US11302117B2 — Anomaly Detection Method, System and Computer Readable Medium (Avigilon Corp / Motorola Solutions, granted 2022). Detects unusual behavior in surveillance video by modeling statistical baselines from object metadata (class, location, velocity) per scene cell — without processing raw frames. With Peter Venetianer.\nWO2020051704A1 — System and Method for Improving Speed of Similarity Based Searches (Avigilon Corp, 2020). Accelerates appearance-search queries by k-medoid clustering of selected feature vectors before database search, reducing compute without sacrificing result quality. With Nicholas John Alcock, Peter L. Venetianer."
+  },
+  {
+    "objectID": "about.html#papers",
+    "href": "about.html#papers",
+    "title": "About Me",
+    "section": "Papers",
+    "text": "Papers\n\nLarge-scale Indoor Mapping with Failure Detection and Recovery in SLAM — Sharmin Rahman, Rob DiPietro, Dharanish Kedarisetti, Vinod Kulathumani. IROS 2024. Proposes an automated visual-inertial SLAM service with a health tracker for faulty measurements and continuous session merging, validated in grocery stores spanning 1700–3700 m². [PDF] [Amazon Science]\nPlus Disease in Retinopathy of Prematurity: Improving Diagnosis by Ranking Disease Severity and Using Quantitative Image Analysis — Jayashree Kalpathy-Cramer, J Peter Campbell, Deniz Erdogmus, Peng Tian, Dharanish Kedarisetti, et al. Ophthalmology 123(11):2345–2351, 2016. Shows that while experts disagree on categorical ROP diagnosis, pairwise severity ranking yields good inter-expert correlation (mean r = 0.84), and that computer-based image analysis can model this continuous spectrum. [DOI] [PubMed]"
   },
   {
     "objectID": "about.html#links",
