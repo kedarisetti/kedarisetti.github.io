@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Alu Toast</title>
+<link>https://kedarisetti.github.io/index.html</link>
+<atom:link href="https://kedarisetti.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<description>Set of all tasty things</description>
+<generator>quarto-1.2.335</generator>
+<lastBuildDate>Thu, 25 Jun 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Anatomy of Learning, and Downsides of Being a Second-Hand Thinker</title>
+  <link>https://kedarisetti.github.io/posts/2026-06-25-anatomy-of-learning/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Growing up, I had a constant need of understanding how objects worked, I was constantly curious, was good at math in my peer group and dug my heels in to understand the core elements of any topic.</p>
+<p>There though when I hit a wall for long time to learn a more complex topic, I had to make concessions on asking about the why, and accepting what was told as truth, <code>that's just how it works</code> and proceeding to use this assumed bedrock to then build the concepts atop.</p>
+<p>This particularly happened to keep the pace with the fire hose of syllabus coming towards me, the need to keep with the pace of <code>learning</code> the course for the tests and an incomplete and immature system to digest the syllabus with a pin or a bookmark.</p>
+<p>Now as I am older and am learning purely for the sake of understanding and out of curiosity for my selfish wants. I want to learn the concepts to their depth. I am not bound by a deadline on within which I have to learn, rather am bound by my limited time — limitations bring out efficiency. I hope to make use of my limited time well by making this an efficient use of time.</p>
+<section id="downside-of-second-hand-thinking" class="level2">
+<h2 class="anchored" data-anchor-id="downside-of-second-hand-thinking">Downside of Second-Hand Thinking</h2>
+<blockquote class="blockquote">
+<p>Be a source, not a relay. — Grant Sanderson</p>
+</blockquote>
+<p>By not understanding a topic completely and relying on another person’s explanation, I will not understand the topic at hand. I have not played with it enough to find the nook and cranny of the thought, the way the concept grows and expands, the beauty of it or where its weaknesses lie and where it would collapse. All these aspects are fun to understand, and give a different perspective to the topic at hand as well as a different view of the world.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>thinking</category>
+  <category>learning</category>
+  <guid>https://kedarisetti.github.io/posts/2026-06-25-anatomy-of-learning/index.html</guid>
+  <pubDate>Thu, 25 Jun 2026 04:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
