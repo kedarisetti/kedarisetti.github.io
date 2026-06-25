@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://kedarisetti.github.io/index.html</loc>
+    <lastmod>2026-06-25T11:49:55.034Z</lastmod>
+  </url>
+  <url>
     <loc>https://kedarisetti.github.io/posts/2026-06-25-anatomy-of-learning/index.html</loc>
-    <lastmod>2026-06-25T11:47:14.325Z</lastmod>
+    <lastmod>2026-06-25T11:49:55.034Z</lastmod>
   </url>
   <url>
     <loc>https://kedarisetti.github.io/about.html</loc>
-    <lastmod>2026-06-25T11:47:14.519Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kedarisetti.github.io/index.html</loc>
-    <lastmod>2026-06-25T11:47:14.720Z</lastmod>
+    <lastmod>2026-06-25T11:49:55.034Z</lastmod>
   </url>
 </urlset>
