@@ -1,0 +1,36 @@
+---
+title: "The Tripwire Patent"
+description: "US 12,634,398 — teaching emergency systems to watch before they act. Winner of Motorola Solutions' Patent of the Year award (2022)."
+date: 2026-07-07
+categories: [patents, public-safety]
+image: mechanism-flow.svg
+---
+
+Imagine a smoke alarm goes off in an office building at 2 a.m. Most of the time, it's nothing — burnt toast in a break room, a dusty detector, a glitch. Dispatching a fire crew for every one of these wastes resources and dulls response to real emergencies. But *ignoring* it until someone calls again risks the opposite failure: the one night it isn't nothing, help arrives late.
+
+Emergency response systems have historically had only those two gears: respond now, or wait for a human to escalate. My patent — [US 12,634,398 B2](https://patents.google.com/patent/US12634398B2/en), granted May 19, 2026 and recognized with Motorola Solutions' internal **Patent of the Year award in 2022** — adds a third gear: *watch, and act the moment the situation actually escalates*.
+
+## The mechanism
+
+When an emergency notification comes in — a 911 call, a triggered alarm — the system automatically retrieves sensor data associated with that exact time and place: nearby cameras, microphones, IoT sensors. But here's the part that makes it a patent rather than a product brochure: it doesn't use that data to immediately launch a response. It uses it to **arm a trigger**.
+
+![The alarm-escalating trigger, step by step.](mechanism-flow.svg){fig-alt="Four-step flow diagram: incident reported, first sensor data retrieved from the same time and place, trigger armed with a condition and matched workflow, and workflow launches only if second sensor data meets the armed condition."}
+
+That trigger has two parts:
+
+1. **An alarm-escalating condition**, derived from the initial sensor data — what would "getting worse" look like for *this* incident, at *this* location?
+2. **A matched response workflow** — the specific incident-response process appropriate for that escalation type, pre-selected and ready to go.
+
+Then the system waits. If *second* sensor data arrives that meets the armed condition — the smoke spreads to a second detector, the audio signature intensifies, movement patterns change — the workflow fires automatically, fully populated with the context first responders need.
+
+![No premature dispatch, no ignored alarm — the workflow launches at the moment of actual escalation.](tripwire-timeline.svg){fig-alt="Timeline chart showing a sensor reading over time. At the incident report, the trigger is armed and a dashed threshold line labeled alarm-escalating condition appears. The reading later crosses the threshold, marked as condition met, launching the response workflow."}
+
+The metaphor that stuck with me: it's a **high-tech tripwire**. Not a camera that records what happened, not an alarm that cries wolf — a conditional watch, armed with local context, that converts to action if and only if the situation crosses the line it was armed to detect.
+
+## Why it matters
+
+The naive version of "smart" emergency response — attach camera footage to the 911 call — gives dispatchers more to look at, but still leaves the escalation decision entirely on humans watching feeds. This design moves that judgment into the system for the window that matters most: the minutes after a first report when a minor incident either fizzles out or becomes the real thing. Dispatch capacity is finite; attention is finite. A system that knows what "worse" looks like — and stages the right response for it in advance — spends both only when they're needed.
+
+Credit where due: this was joint work with my co-inventors **Emmy Beltre, Kaveh Malakuti, and Mariya Bondareva** at Motorola Solutions. Filed September 2023, published April 2025, granted May 2026 — patents move at their own pace.
+
+*This is the first in what may become a series of plain-English explanations of my patents. The full list is on the [about page](../../about.qmd).*

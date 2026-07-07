@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 400" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="axisArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#868e96"/>
+    </marker>
+  </defs>
+
+  <!-- armed watch window shading -->
+  <rect x="250" y="50" width="430" height="260" fill="#f0ad4e" opacity="0.08"/>
+  <text x="465" y="76" text-anchor="middle" font-size="13" fill="#b07d2b" font-style="italic">trigger armed — system watches</text>
+
+  <!-- axes -->
+  <line x1="70" y1="310" x2="880" y2="310" stroke="#868e96" stroke-width="1.5" marker-end="url(#axisArrow)"/>
+  <line x1="70" y1="310" x2="70" y2="60" stroke="#868e96" stroke-width="1.5" marker-end="url(#axisArrow)"/>
+  <text x="875" y="332" text-anchor="end" font-size="12" fill="#868e96">time</text>
+  <text x="62" y="70" text-anchor="end" font-size="12" fill="#868e96" transform="rotate(-90 62 70)"></text>
+  <text x="40" y="190" text-anchor="middle" font-size="12" fill="#868e96" transform="rotate(-90 40 190)">sensor reading</text>
+
+  <!-- threshold line -->
+  <line x1="70" y1="130" x2="880" y2="130" stroke="#d9230f" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="875" y="122" text-anchor="end" font-size="12.5" fill="#d9230f">alarm-escalating condition</text>
+
+  <!-- sensor signal path: calm, small bump at incident, drifts, then crosses threshold -->
+  <path d="M 70 265
+           C 100 262, 130 268, 160 264
+           C 190 260, 215 250, 250 240
+           C 280 232, 305 244, 335 238
+           C 370 230, 395 210, 430 205
+           C 465 200, 490 214, 520 200
+           C 550 186, 575 160, 610 148
+           C 640 138, 655 126, 680 112
+           C 700 101, 720 92, 745 88"
+        fill="none" stroke="#2780e3" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- t0 incident marker -->
+  <line x1="250" y1="310" x2="250" y2="90" stroke="#868e96" stroke-width="1" stroke-dasharray="3 4"/>
+  <circle cx="250" cy="240" r="6" fill="#2780e3"/>
+  <text x="250" y="345" text-anchor="middle" font-size="13" font-weight="bold" fill="#373a3c">incident reported</text>
+  <text x="250" y="363" text-anchor="middle" font-size="12" fill="#868e96">sensor data pulled, condition armed</text>
+
+  <!-- crossing point -->
+  <circle cx="672" cy="117" r="8" fill="#d9230f"/>
+  <circle cx="672" cy="117" r="14" fill="none" stroke="#d9230f" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="672" cy="117" r="20" fill="none" stroke="#d9230f" stroke-width="1" opacity="0.25"/>
+  <line x1="672" y1="310" x2="672" y2="140" stroke="#868e96" stroke-width="1" stroke-dasharray="3 4"/>
+  <text x="672" y="345" text-anchor="middle" font-size="13" font-weight="bold" fill="#d9230f">condition met</text>
+  <text x="672" y="363" text-anchor="middle" font-size="12" fill="#868e96">response workflow launches</text>
+
+  <!-- no-response note before window -->
+  <text x="158" y="105" text-anchor="middle" font-size="12.5" fill="#868e96" font-style="italic">no premature dispatch,</text>
+  <text x="158" y="122" text-anchor="middle" font-size="12.5" fill="#868e96" font-style="italic">no ignored alarm</text>
+</svg>
