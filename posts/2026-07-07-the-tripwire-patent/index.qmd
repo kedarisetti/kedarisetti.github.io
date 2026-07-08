@@ -8,7 +8,7 @@ image: mechanism-flow.svg
 
 Imagine a smoke alarm goes off in an office building at 2 a.m. Most of the time, it's nothing — burnt toast in a break room, a dusty detector, a glitch. Dispatching a fire crew for every one of these wastes resources and dulls response to real emergencies. But *ignoring* it until someone calls again risks the opposite failure: the one night it isn't nothing, help arrives late.
 
-Emergency response systems have historically had only those two gears: respond now, or wait for a human to escalate. My patent — [US 12,634,398 B2](https://patents.google.com/patent/US12634398B2/en), granted May 19, 2026 and recognized with Motorola Solutions' internal **Patent of the Year award in 2022** — adds a third gear: *watch, and act the moment the situation actually escalates*.
+Emergency response systems have historically had only those two gears: respond now, or wait for a human to escalate. My patent — [US 12,634,398 B2](https://patents.google.com/patent/US20250112995A1/en) ([official grant PDF](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12634398)), granted May 19, 2026 and recognized with Motorola Solutions' internal **Patent of the Year award in 2022** — adds a third gear: *watch, and act the moment the situation actually escalates*.
 
 ## The mechanism
 
