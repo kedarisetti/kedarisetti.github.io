@@ -4,28 +4,28 @@
     "href": "index.html",
     "title": "Parallax",
     "section": "",
-    "text": "The Tripwire Patent\n\n\n\npatents\n\npublic-safety\n\n\n\nUS 12,634,398 — teaching emergency systems to watch before they act. Winner of Motorola Solutions’ Patent of the Year award (2022).\n\n\n\n\n\nJul 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nAnatomy of Learning, and Downsides of Being a Second-Hand Thinker\n\n\n\nthinking\n\nlearning\n\n\n\n\n\n\n\n\n\nJun 25, 2026\n\n\n\n\n\nNo matching items"
+    "text": "The Tripwire Patent\n\n\n\npatents\n\npublic-safety\n\n\n\nUS 12,634,398 — an emergency system that watches before it acts.\n\n\n\n\n\nJul 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nAnatomy of Learning, and Downsides of Being a Second-Hand Thinker\n\n\n\nthinking\n\nlearning\n\n\n\n\n\n\n\n\n\nJun 25, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2026-07-07-the-tripwire-patent/index.html",
     "href": "posts/2026-07-07-the-tripwire-patent/index.html",
     "title": "The Tripwire Patent",
     "section": "",
-    "text": "Imagine a smoke alarm goes off in an office building at 2 a.m. Most of the time, it’s nothing — burnt toast in a break room, a dusty detector, a glitch. Dispatching a fire crew for every one of these wastes resources and dulls response to real emergencies. But ignoring it until someone calls again risks the opposite failure: the one night it isn’t nothing, help arrives late.\nEmergency response systems have historically had only those two gears: respond now, or wait for a human to escalate. My patent — US 12,634,398 B2 (official grant PDF), granted May 19, 2026 and recognized with Motorola Solutions’ internal Patent of the Year award in 2022 — adds a third gear: watch, and act the moment the situation actually escalates."
+    "text": "A smoke alarm goes off in an office building at 2 am. Most of the time it is nothing, burnt toast in a break room, a dusty detector, a glitch. Sending a fire crew out for every one of these wastes the crew and dulls the response for the night it is a real fire. Ignoring it and waiting for someone to call again is the opposite failure, help shows up late.\nEmergency response systems have mostly had two gears, respond now or wait for a human to decide. The patent I worked on at Motorola Solutions adds a third gear: watch, and act only when the situation actually gets worse. It was granted this May as US 12,634,398 B2 (grant PDF), and the invention won Motorola’s internal Patent of the Year award in 2022."
   },
   {
-    "objectID": "posts/2026-07-07-the-tripwire-patent/index.html#the-mechanism",
-    "href": "posts/2026-07-07-the-tripwire-patent/index.html#the-mechanism",
+    "objectID": "posts/2026-07-07-the-tripwire-patent/index.html#how-it-works",
+    "href": "posts/2026-07-07-the-tripwire-patent/index.html#how-it-works",
     "title": "The Tripwire Patent",
-    "section": "The mechanism",
-    "text": "The mechanism\nWhen an emergency notification comes in — a 911 call, a triggered alarm — the system automatically retrieves sensor data associated with that exact time and place: nearby cameras, microphones, IoT sensors. But here’s the part that makes it a patent rather than a product brochure: it doesn’t use that data to immediately launch a response. It uses it to arm a trigger.\n\n\n\nThe alarm-escalating trigger, step by step.\n\n\nThat trigger has two parts:\n\nAn alarm-escalating condition, derived from the initial sensor data — what would “getting worse” look like for this incident, at this location?\nA matched response workflow — the specific incident-response process appropriate for that escalation type, pre-selected and ready to go.\n\nThen the system waits. If second sensor data arrives that meets the armed condition — the smoke spreads to a second detector, the audio signature intensifies, movement patterns change — the workflow fires automatically, fully populated with the context first responders need.\n\n\n\nNo premature dispatch, no ignored alarm — the workflow launches at the moment of actual escalation.\n\n\nThe metaphor that stuck with me: it’s a high-tech tripwire. Not a camera that records what happened, not an alarm that cries wolf — a conditional watch, armed with local context, that converts to action if and only if the situation crosses the line it was armed to detect."
+    "section": "How it works",
+    "text": "How it works\nWhen a report comes in, a 911 call or an alarm, the system pulls sensor data tied to that time and place, nearby cameras, microphones, IoT sensors. It does not use that data to start a response. It uses it to arm a trigger.\n\n\n\nThe alarm-escalating trigger, step by step.\n\n\nThe trigger has two parts. First, an alarm-escalating condition derived from that initial sensor data, which describes what getting worse would look like for this incident at this location. Second, a response workflow matched to that kind of escalation, selected ahead of time and kept ready.\nThen the system waits. If later sensor data meets the armed condition, say smoke reaching a second detector or the audio signature intensifying, the workflow starts on its own, carrying the context responders need.\n\n\n\nThe workflow launches at the moment of actual escalation.\n\n\nThe way I describe it to friends is a tripwire. The initial report decides where the wire is laid and what should happen when it is crossed. If nothing ever crosses it, nobody is bothered."
   },
   {
-    "objectID": "posts/2026-07-07-the-tripwire-patent/index.html#why-it-matters",
-    "href": "posts/2026-07-07-the-tripwire-patent/index.html#why-it-matters",
+    "objectID": "posts/2026-07-07-the-tripwire-patent/index.html#why-i-like-this-design",
+    "href": "posts/2026-07-07-the-tripwire-patent/index.html#why-i-like-this-design",
     "title": "The Tripwire Patent",
-    "section": "Why it matters",
-    "text": "Why it matters\nThe naive version of “smart” emergency response — attach camera footage to the 911 call — gives dispatchers more to look at, but still leaves the escalation decision entirely on humans watching feeds. This design moves that judgment into the system for the window that matters most: the minutes after a first report when a minor incident either fizzles out or becomes the real thing. Dispatch capacity is finite; attention is finite. A system that knows what “worse” looks like — and stages the right response for it in advance — spends both only when they’re needed.\nCredit where due: this was joint work with my co-inventors Emmy Beltre, Kaveh Malakuti, and Mariya Bondareva at Motorola Solutions. Filed September 2023, published April 2025, granted May 2026 — patents move at their own pace.\nThis is the first in what may become a series of plain-English explanations of my patents. The full list is on the about page."
+    "section": "Why I like this design",
+    "text": "Why I like this design\nAttaching camera footage to a 911 call gives a dispatcher more to look at, but the judgement of whether an incident is escalating still rests on a human watching feeds. The minutes after a first report are exactly when a minor incident either fizzles out or turns into the real thing, and this design moves that judgement into the system for that window, with the response already staged for the form the escalation would take.\nThis was joint work with my co-inventors Emmy Beltre, Kaveh Malakuti and Mariya Bondareva. Filed September 2023, published April 2025, granted May 2026."
   },
   {
     "objectID": "posts/2026-06-25-anatomy-of-learning/index.html",
