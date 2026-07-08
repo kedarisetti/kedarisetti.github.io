@@ -110,8 +110,8 @@
     <!-- condition + response card -->
     <rect x="360" y="398" width="245" height="118" rx="8" fill="#ffffff" stroke="#f0ad4e"/>
     <text x="482" y="420" text-anchor="middle" font-size="12.5" font-style="italic" fill="#373a3c">
-      <tspan x="482" dy="0">if a new clip matches at least</tspan>
-      <tspan x="482" dy="16">4 of the 5 words</tspan>
+      <tspan x="482" dy="0">if a new clip's tags share at</tspan>
+      <tspan x="482" dy="16">least 4 of the 5 words</tspan>
     </text>
     <line x1="380" y1="446" x2="585" y2="446" stroke="#f0ad4e" stroke-width="1"/>
     <text x="482" y="466" text-anchor="middle" font-size="12.5" fill="#5a5e62">
@@ -137,9 +137,9 @@
     <line x1="771" y1="374" x2="778" y2="382" stroke="#d9230f" stroke-width="3.5" stroke-linecap="round"/>
     <line x1="823" y1="374" x2="816" y2="382" stroke="#d9230f" stroke-width="3.5" stroke-linecap="round"/>
     <text x="797" y="462" text-anchor="middle" font-size="13" fill="#373a3c">
-      <tspan x="797" dy="0">The next time the camera sees</tspan>
-      <tspan x="797" dy="17">readings that match, the staged</tspan>
-      <tspan x="797" dy="17">response starts on its own.</tspan>
+      <tspan x="797" dy="0">The camera keeps tagging what</tspan>
+      <tspan x="797" dy="17">it sees. When the tags match,</tspan>
+      <tspan x="797" dy="17">the response starts on its own.</tspan>
       <tspan x="797" dy="21" font-style="italic" fill="#d9230f">No one has to call.</tspan>
     </text>
   </g>
