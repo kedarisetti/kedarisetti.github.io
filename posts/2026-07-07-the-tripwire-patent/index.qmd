@@ -10,7 +10,7 @@ Picture an explosion in a parking garage. The people nearby do exactly what you 
 
 The garage had cameras. They recorded everything from the first frame, and they did nothing with it, because a camera has no way of knowing that what it just saw is worth summoning a fire brigade. The usual fix is to pre-program alarm systems to detect specific events, and that works only for the events someone thought to predefine. The ones nobody imagined in advance are exactly the ones that slip through.
 
-This is the problem my patent goes after. It was granted this May as [US 12,634,398 B2](https://patents.google.com/patent/US20250112995A1/en) ([grant PDF](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12634398)), and the invention won Motorola's internal Patent of the Year award in 2022.
+This is the problem my patent goes after. It was granted this May as [US 12,634,398 B2](https://patents.google.com/patent/US20250112995A1/en) ([grant PDF](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12634398)), and the invention won Motorola's Top Invention of the Year award for 2021.
 
 ## Let the call teach the sensors
 
