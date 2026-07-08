@@ -12,6 +12,8 @@ The garage had cameras. They recorded everything from the first frame, and they 
 
 This is the problem my patent goes after. It was granted this May as [US 12,634,398 B2](https://patents.google.com/patent/US20250112995A1/en) ([grant PDF](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12634398)), and the invention won Motorola's Top Invention of the Year award for 2021.
 
+![The trophy.](top-invention-trophy.jpeg){width=55% fig-align="center" fig-alt="Me holding a green hexagonal Motorola trophy engraved Top Invention of the Year 2021, with the Motorola Solutions box in my other hand."}
+
 ## Let the call teach the sensors
 
 The idea is to use the 911 call, when it finally arrives, to teach the nearby sensors what mattered.
