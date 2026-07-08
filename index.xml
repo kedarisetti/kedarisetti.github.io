@@ -25,8 +25,8 @@
 <section id="let-the-call-teach-the-sensors" class="level2">
 <h2 class="anchored" data-anchor-id="let-the-call-teach-the-sensors">Let the call teach the sensors</h2>
 <p>The idea is to use the 911 call, when it finally arrives, to teach the nearby sensors what mattered.</p>
-<p>When the call comes in, the system finds the sensors that could have seen the incident and pulls what they recorded around that time and place, including the minutes before. Software then distills that recording into something small and checkable. The patent walks through a concrete version: image recognition reduces the incident video to a set of words, {explosion, fire, car, people, scream}.</p>
-<p>From that summary the system arms what the claims call an alarm-escalating trigger. It has two parts. A condition, written in the sensors’ own vocabulary: a new clip whose summary shares at least four of those five words. And a response staged in advance for that kind of incident: notify the responders’ radios, alert the 911 call taker, open the emergency doors, sound the sirens.</p>
+<p>When the call comes in, the system finds the sensors that could have seen the incident and pulls what they recorded around that time and place, including the minutes before. Software then distills that recording into something small and checkable. The concrete version we walk through in the filing: image recognition reduces the incident video to a set of words, {explosion, fire, car, people, scream}.</p>
+<p>From that summary the system arms what we called an alarm-escalating trigger. It has two parts. A condition, written in the sensors’ own vocabulary: a new clip whose summary shares at least four of those five words. And a response staged in advance for that kind of incident: notify the responders’ radios, alert the 911 call taker, open the emergency doors, sound the sirens.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://kedarisetti.github.io/posts/2026-07-07-the-tripwire-patent/mechanism-flow.svg" class="img-fluid figure-img" alt="Five-panel storyboard. Panel one, a 911 call reports the incident. Panel two, sensors near that time and place hand over what they recorded. Panel three, software distills the footage into the words explosion, fire, car, people, scream. Panel four, a tripwire is armed with the condition that a new clip matches at least four of the five words, plus a staged response: notify responders' radios, alert the call taker, open emergency doors, sound sirens. Panel five, later footage meets the condition and the workflow fires without anyone calling."></p>
@@ -40,19 +40,19 @@
 <figcaption>The payoff, in time saved.</figcaption>
 </figure>
 </div>
-<p>That second timeline is the whole point. The first incident pays the cost of human judgement, one real 911 call, and converts it into a machine-checkable description of what an emergency looks like at this place. The patent states the payoff plainly: the next time, a proper response can start before any notification from a witness, or without one at all.</p>
+<p>That second timeline is the whole point. The first incident pays the cost of human judgement, one real 911 call, and converts it into a machine-checkable description of what an emergency looks like at this place. It is the payoff we wrote into the filing: the next time, a proper response can start before any notification from a witness, or without one at all.</p>
 </section>
 <section id="why-i-find-it-elegant" class="level2">
 <h2 class="anchored" data-anchor-id="why-i-find-it-elegant">Why I find it elegant</h2>
 <p>A tripwire armed this way is narrow on purpose. It is tied to a place, to a kind of incident, and to sensor readings that accompanied a real emergency. The camera is never asked to decide what an emergency is in general, which is the version of the problem nobody knows how to solve. It is asked whether what it sees now resembles the thing a human already declared an emergency, and that is just a similarity check.</p>
-<p>The wire also does not have to stay where it was laid. The trigger can be copied to similar sensors in similar buildings, an office tower, a plant with the same smart-building sensors, so a lesson learned once arms tripwires in many places. The patent even sketches the far end of this: the accumulated incidents and their sensor readings become training data for a model that learns which readings deserve a response.</p>
+<p>The wire also does not have to stay where it was laid. The trigger can be copied to similar sensors in similar buildings, an office tower, a plant with the same smart-building sensors, so a lesson learned once arms tripwires in many places. We sketched the far end of this in the filing too: the accumulated incidents and their sensor readings become training data for a model that learns which readings deserve a response.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://kedarisetti.github.io/posts/2026-07-07-the-tripwire-patent/trigger-sharing.svg" class="img-fluid figure-img" alt="A building where the incident happened carries an armed trigger shield. Dashed arrows copy the trigger to two other buildings with similar sensors, another office and a plant across town, each now carrying a smaller shield and watching for the same condition."></p>
 <figcaption>One incident arms many tripwires.</figcaption>
 </figure>
 </div>
-<p>This was joint work with my co-inventors Emmy Beltre, Kaveh Malakuti and Mariya Bondareva at Motorola Solutions. Filed September 2023, granted May 2026. The word set, the response actions and the garage-style scenario above are drawn from the patent’s own text and examples.</p>
+<p>This was joint work with my co-inventors Emmy Beltre, Kaveh Malakuti and Mariya Bondareva at Motorola Solutions. Filed September 2023, granted May 2026. The word set, the response actions and the garage-style scenario above are the examples we put in the patent itself.</p>
 
 
 </section>

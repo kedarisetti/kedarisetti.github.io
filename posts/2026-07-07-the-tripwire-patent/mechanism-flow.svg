@@ -8,13 +8,12 @@
     </marker>
   </defs>
 
-  <!-- ===== Row 1 ===== -->
+  <!-- ===== Row 1 (reads left to right) ===== -->
 
   <!-- Panel 1: the call -->
   <g>
     <rect x="25" y="40" width="280" height="180" rx="12" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.5"/>
     <text x="45" y="70" font-size="13" font-weight="bold" fill="#2780e3">1 · THE CALL</text>
-    <!-- phone icon -->
     <rect x="140" y="88" width="30" height="52" rx="7" fill="#2780e3"/>
     <rect x="146" y="96" width="18" height="30" rx="2" fill="#ffffff" opacity="0.85"/>
     <text x="155" y="118" text-anchor="middle" font-size="10" font-weight="bold" fill="#2780e3">911</text>
@@ -30,7 +29,6 @@
   <g>
     <rect x="345" y="40" width="280" height="180" rx="12" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.5"/>
     <text x="365" y="70" font-size="13" font-weight="bold" fill="#2780e3">2 · THE LOOKUP</text>
-    <!-- camera icon + film strip -->
     <rect x="440" y="92" width="42" height="26" rx="5" fill="#2780e3"/>
     <path d="M482 99 l16 -8 v28 l-16 -8 z" fill="#2780e3"/>
     <circle cx="456" cy="105" r="7" fill="#ffffff"/>
@@ -51,7 +49,6 @@
   <g>
     <rect x="665" y="40" width="270" height="180" rx="12" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.5"/>
     <text x="685" y="70" font-size="13" font-weight="bold" fill="#2780e3">3 · THE SUMMARY</text>
-    <!-- word chips -->
     <rect x="685" y="86" width="90" height="24" rx="12" fill="#2780e3" opacity="0.15"/>
     <text x="730" y="102" text-anchor="middle" font-size="12.5" fill="#1c5da8">explosion</text>
     <rect x="783" y="86" width="50" height="24" rx="12" fill="#2780e3" opacity="0.15"/>
@@ -68,44 +65,43 @@
     </text>
   </g>
 
-  <!-- connector row 1 -> row 2 -->
-  <path d="M 800 224 v 30 h -280 v 26" fill="none" stroke="#868e96" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- wrap-around connector: panel 3 down, across to the left margin, down into panel 4 -->
+  <path d="M 800 224 v 28 H 245 v 28" fill="none" stroke="#868e96" stroke-width="2" marker-end="url(#arrow)"/>
 
-  <!-- ===== Row 2 ===== -->
+  <!-- ===== Row 2 (also reads left to right) ===== -->
 
   <!-- Panel 4: the tripwire -->
   <g>
-    <rect x="330" y="285" width="380" height="230" rx="12" fill="#fff8ec" stroke="#f0ad4e" stroke-width="1.5"/>
-    <text x="350" y="315" font-size="13" font-weight="bold" fill="#b07d2b">4 · THE TRIPWIRE, ARMED</text>
-    <!-- condition card -->
-    <rect x="350" y="330" width="340" height="52" rx="8" fill="#ffffff" stroke="#f0ad4e"/>
-    <text x="520" y="352" text-anchor="middle" font-size="13" fill="#373a3c">condition</text>
-    <text x="520" y="371" text-anchor="middle" font-size="13.5" font-style="italic" fill="#373a3c">a new clip matches at least 4 of the 5 words</text>
-    <!-- workflow card -->
-    <rect x="350" y="394" width="340" height="100" rx="8" fill="#ffffff" stroke="#f0ad4e"/>
-    <text x="520" y="416" text-anchor="middle" font-size="13" fill="#373a3c">staged response, ready to go</text>
-    <text x="520" y="437" text-anchor="middle" font-size="13" fill="#5a5e62">notify the responders' radios</text>
-    <text x="520" y="456" text-anchor="middle" font-size="13" fill="#5a5e62">alert the 911 call taker</text>
-    <text x="520" y="475" text-anchor="middle" font-size="13" fill="#5a5e62">open emergency doors · sound the sirens</text>
+    <rect x="25" y="285" width="440" height="230" rx="12" fill="#fff8ec" stroke="#f0ad4e" stroke-width="1.5"/>
+    <text x="45" y="315" font-size="13" font-weight="bold" fill="#b07d2b">4 · THE TRIPWIRE, ARMED</text>
+    <rect x="45" y="330" width="400" height="52" rx="8" fill="#ffffff" stroke="#f0ad4e"/>
+    <text x="245" y="352" text-anchor="middle" font-size="13" fill="#373a3c">condition</text>
+    <text x="245" y="371" text-anchor="middle" font-size="13.5" font-style="italic" fill="#373a3c">a new clip matches at least 4 of the 5 words</text>
+    <rect x="45" y="394" width="400" height="100" rx="8" fill="#ffffff" stroke="#f0ad4e"/>
+    <text x="245" y="416" text-anchor="middle" font-size="13" fill="#373a3c">staged response, ready to go</text>
+    <text x="245" y="437" text-anchor="middle" font-size="13" fill="#5a5e62">notify the responders' radios</text>
+    <text x="245" y="456" text-anchor="middle" font-size="13" fill="#5a5e62">alert the 911 call taker</text>
+    <text x="245" y="475" text-anchor="middle" font-size="13" fill="#5a5e62">open emergency doors · sound the sirens</text>
   </g>
 
-  <line x1="326" y1="400" x2="290" y2="400" stroke="#d9230f" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowRed)"/>
+  <!-- conditional arrow 4 -> 5 -->
+  <line x1="469" y1="395" x2="636" y2="395" stroke="#d9230f" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowRed)"/>
+  <text x="553" y="380" text-anchor="middle" font-size="12.5" font-style="italic" fill="#d9230f">when a later clip</text>
+  <text x="553" y="418" text-anchor="middle" font-size="12.5" font-style="italic" fill="#d9230f">meets the condition</text>
 
   <!-- Panel 5: it fires -->
   <g>
-    <rect x="25" y="285" width="260" height="230" rx="12" fill="#fdf0ee" stroke="#d9230f" stroke-width="1.5"/>
-    <text x="45" y="315" font-size="13" font-weight="bold" fill="#d9230f">5 · IT FIRES</text>
-    <!-- siren icon -->
-    <path d="M135 396 h44 v10 h-52 v-10 z" fill="#d9230f"/>
-    <path d="M141 396 v-14 a16 16 0 0 1 32 0 v14 z" fill="#d9230f"/>
-    <line x1="157" y1="356" x2="157" y2="366" stroke="#d9230f" stroke-width="3.5" stroke-linecap="round"/>
-    <line x1="131" y1="362" x2="138" y2="370" stroke="#d9230f" stroke-width="3.5" stroke-linecap="round"/>
-    <line x1="183" y1="362" x2="176" y2="370" stroke="#d9230f" stroke-width="3.5" stroke-linecap="round"/>
-    <text x="155" y="442" text-anchor="middle" font-size="13" fill="#373a3c">
-      <tspan x="155" dy="0">Later footage meets the</tspan>
-      <tspan x="155" dy="17">condition and the workflow</tspan>
-      <tspan x="155" dy="17">starts on its own.</tspan>
-      <tspan x="155" dy="21" font-style="italic" fill="#d9230f">No one has to call.</tspan>
+    <rect x="640" y="285" width="295" height="230" rx="12" fill="#fdf0ee" stroke="#d9230f" stroke-width="1.5"/>
+    <text x="660" y="315" font-size="13" font-weight="bold" fill="#d9230f">5 · IT FIRES</text>
+    <path d="M765 396 h44 v10 h-52 v-10 z" fill="#d9230f"/>
+    <path d="M771 396 v-14 a16 16 0 0 1 32 0 v14 z" fill="#d9230f"/>
+    <line x1="787" y1="356" x2="787" y2="366" stroke="#d9230f" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="761" y1="362" x2="768" y2="370" stroke="#d9230f" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="813" y1="362" x2="806" y2="370" stroke="#d9230f" stroke-width="3.5" stroke-linecap="round"/>
+    <text x="787" y="442" text-anchor="middle" font-size="13" fill="#373a3c">
+      <tspan x="787" dy="0">The staged response starts</tspan>
+      <tspan x="787" dy="17">on its own.</tspan>
+      <tspan x="787" dy="21" font-style="italic" fill="#d9230f">No one has to call.</tspan>
     </text>
   </g>
 
