@@ -1,0 +1,64 @@
+---
+title: "Learning Normal"
+description: "US 11,302,117 — cameras that learn what usual looks like, cell by cell and hour by hour, so the unusual can point itself out."
+date: 2026-07-09
+categories: [patents, computer-vision]
+image: scene-grid.svg
+resources:
+  - cell-learning.mp4
+  - traffic-rhythms.mp4
+  - week-patterns.mp4
+  - scene-grid.svg
+  - week-patterns.svg
+---
+
+A guard in front of a wall of monitors is paid to notice the one moment in a week when something odd crosses a lens, and that moment looks a great deal like every uneventful hour around it. The two examples in our filing are that kind of moment: a person running through a crowded park, a speeding vehicle on a highway. Both are easy to miss live and obvious in hindsight.
+
+The usual fix is to write rules. Draw a line on the image and alert when something crosses it, alert when a car appears where cars should not be. Rules work until the scene changes, and someone has to imagine every rule in advance. That is the same trap I wrote about in [the tripwire patent](../2026-07-07-the-tripwire-patent/index.qmd): the events nobody predefined are exactly the ones that slip through.
+
+My patent, [US 11,302,117 B2](https://patents.google.com/patent/US11302117B2/en) ([grant PDF](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11302117)), takes the opposite route: it does not try to define unusual at all. The camera learns what usual looks like, everywhere in its view, and unusual is whatever the scene has not been doing.
+
+## Cell by cell
+
+The scene is divided into a grid of cells, and statistics are kept per class of object, in effect one grid for people and another for vehicles. Each cell learns how many objects are typically in it, how fast they move, in which directions. The input is not the video itself but the metadata the analytics already produce, the class, position and velocity of each tracked object. We built detection to run on the metadata alone, without touching the images again. That makes it cheap enough to run everywhere at once, and it works the same on a live feed and on video recorded years ago.
+
+```{=html}
+<figure>
+<video autoplay muted loop playsinline controls style="width:100%; border-radius:8px;" aria-label="Animation. An intersection divides into a grid of cells, with roads crossing and a sidewalk alongside. Cars pass quickly while pedestrians amble far more slowly. One metric is watched in two cells: how often are vehicles here. With each passing car the road cell's count climbs, one, two, three, four, five, while the corner cell's count stays at zero, in every window. Then a red car veers off course at the intersection into the corner cell, which is ringed in red: a count that has always been zero just became one. A closing line notes that presence is one signal, and speed and direction are modeled the same way.">
+  <source src="cell-learning.mp4" type="video/mp4">
+</video>
+<figcaption>One metric, two cells. The road cell's count climbs, the corner cell's stays at zero, and the anomaly is a zero that just became one. The same bookkeeping works for speed and direction.</figcaption>
+</figure>
+```
+
+Statistics this local catch what one model for the whole scene would average away. A car at forty kilometers an hour is background to the road cells and an alarm two cells over, where the vehicle statistics have never recorded anything at all. Fifty people spread across a plaza is an ordinary afternoon to the person grid; the same fifty packed into one corner cell is a crowd forming. And nobody tells the system which cells are road and which are sidewalk. The statistics diverge on their own, and our filing dwells on this: clusters of small person-dense cells reveal the sidewalk, high consistent speeds reveal the road, aligned trajectories reveal the paths. The geography of the scene falls out of the models.
+
+## Normal depends on the clock
+
+A loading dock at 2 pm and the same dock at 2 am are different places. So each cell keeps separate statistics for separate stretches of the week, Monday 8 to 9 am, Wednesday 5 to 6 pm, and a moment is judged against the statistics for its own stretch.
+
+```{=html}
+<figure>
+<video autoplay muted loop playsinline controls style="width:100%; border-radius:8px;" aria-label="Animation. The same intersection is shown with a calendar chip and a clock face. On Monday at 8 am the road streams with rush-hour cars and the cell's activity histogram is tall. The chip flips to Monday 2 am, a single car passes an otherwise empty scene, and the histogram flattens to almost nothing. On Sunday at 11 am there are fewer cars and more pedestrians, and the histogram takes a third, different shape. The three histograms then appear side by side, labeled Monday 8 am, Monday 2 am and Sunday 11 am: the same cell keeps a different normal for each kind of time.">
+  <source src="traffic-rhythms.mp4" type="video/mp4">
+</video>
+<figcaption>The same cell, three different normals: rush hour, the middle of the night, a weekend morning.</figcaption>
+</figure>
+```
+
+Stretches whose statistics turn out alike are then merged into shared patterns, weekday mornings, nights, weekends. Normal is always normal for here and for now: a person at the dock on Tuesday afternoon is background, the same person on Sunday at 3 am stands out.
+
+```{=html}
+<figure>
+<video autoplay muted loop playsinline controls style="width:100%; border-radius:8px;" aria-label="Animation. A grid of days of the week against four daily time slots fills with small activity curves, a single busy hump on weekday daytimes, a double-humped shape on weekends, a flat wiggle at night. Dashed outlines then group the night row, the weekday daytime block and the weekend columns into three shared patterns.">
+  <source src="week-patterns.mp4" type="video/mp4">
+</video>
+<figcaption>One cell's week. Similar intervals merge into shared patterns, so each moment is judged against its own kind of time.</figcaption>
+</figure>
+```
+
+## Where it went
+
+This one did not stay on paper. It shipped in Avigilon cameras as Unusual Motion Detection, and the filing's own figures show the product: a search screen where an operator filters a day of footage down to the moments of unusual speed, unusual direction, presence where there is usually nothing, absence where there is usually motion. The models take correction too, dismiss a false alarm and the statistics behind it adjust. It is also my most built-upon patent: forty patent families cite it so far.
+
+This was joint work with Peter Venetianer at Avigilon. Provisional filed April 2019, granted April 2022. Looking back, the conviction that carried into the tripwire patent years later started here: the metadata is enough, and learned normal beats predefined rules.
