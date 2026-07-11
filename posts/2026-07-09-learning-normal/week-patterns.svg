@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 470" font-family="Helvetica, Arial, sans-serif">
+<text x="120" y="36" font-size="14" font-weight="bold" fill="#373a3c">One cell's statistics, across the week</text>
+<text x="170.0" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#373a3c">M</text>
+<text x="270.0" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#373a3c">T</text>
+<text x="370.0" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#373a3c">W</text>
+<text x="470.0" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#373a3c">T</text>
+<text x="570.0" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#373a3c">F</text>
+<text x="670.0" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#373a3c">Sa</text>
+<text x="770.0" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#373a3c">Su</text>
+<text x="108" y="114.0" text-anchor="end" font-size="12" fill="#5a5e62">12am-6am</text>
+<text x="108" y="194.0" text-anchor="end" font-size="12" fill="#5a5e62">6am-12pm</text>
+<text x="108" y="274.0" text-anchor="end" font-size="12" fill="#5a5e62">12pm-6pm</text>
+<text x="108" y="354.0" text-anchor="end" font-size="12" fill="#5a5e62">6pm-12am</text>
+<rect x="120" y="70" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 134 126 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="120" y="150" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 134 206 C 155.6 206, 157.04 168, 170.0 168 C 182.96 168, 184.4 206, 206 206" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="120" y="230" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 134 286 C 155.6 286, 157.04 248, 170.0 248 C 182.96 248, 184.4 286, 206 286" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="120" y="310" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 134 366 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="220" y="70" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 234 126 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="220" y="150" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 234 206 C 255.6 206, 257.04 168, 270.0 168 C 282.96 168, 284.4 206, 306 206" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="220" y="230" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 234 286 C 255.6 286, 257.04 248, 270.0 248 C 282.96 248, 284.4 286, 306 286" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="220" y="310" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 234 366 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="320" y="70" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 334 126 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="320" y="150" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 334 206 C 355.6 206, 357.04 168, 370.0 168 C 382.96 168, 384.4 206, 406 206" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="320" y="230" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 334 286 C 355.6 286, 357.04 248, 370.0 248 C 382.96 248, 384.4 286, 406 286" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="320" y="310" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 334 366 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="420" y="70" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 434 126 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="420" y="150" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 434 206 C 455.6 206, 457.04 168, 470.0 168 C 482.96 168, 484.4 206, 506 206" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="420" y="230" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 434 286 C 455.6 286, 457.04 248, 470.0 248 C 482.96 248, 484.4 286, 506 286" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="420" y="310" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 434 366 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="520" y="70" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 534 126 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="520" y="150" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 534 206 C 555.6 206, 557.04 168, 570.0 168 C 582.96 168, 584.4 206, 606 206" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="520" y="230" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 534 286 C 555.6 286, 557.04 248, 570.0 248 C 582.96 248, 584.4 286, 606 286" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="520" y="310" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 534 366 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="620" y="70" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 634 126 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="620" y="150" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 634 206 C 642.64 206, 644.08 180, 652.0 180 C 659.92 180, 661.36 206, 670.0 206 C 678.64 206, 680.08 176, 688.0 176 C 695.92 176, 697.36 206, 706 206" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="620" y="230" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 634 286 C 642.64 286, 644.08 260, 652.0 260 C 659.92 260, 661.36 286, 670.0 286 C 678.64 286, 680.08 256, 688.0 256 C 695.92 256, 697.36 286, 706 286" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="620" y="310" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 634 366 C 642.64 366, 644.08 340, 652.0 340 C 659.92 340, 661.36 366, 670.0 366 C 678.64 366, 680.08 336, 688.0 336 C 695.92 336, 697.36 366, 706 366" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="720" y="70" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 734 126 q 5.76 -7 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0 t 12.24 0" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="720" y="150" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 734 206 C 742.64 206, 744.08 180, 752.0 180 C 759.92 180, 761.36 206, 770.0 206 C 778.64 206, 780.08 176, 788.0 176 C 795.92 176, 797.36 206, 806 206" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="720" y="230" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 734 286 C 742.64 286, 744.08 260, 752.0 260 C 759.92 260, 761.36 286, 770.0 286 C 778.64 286, 780.08 256, 788.0 256 C 795.92 256, 797.36 286, 806 286" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="720" y="310" width="100" height="80" fill="none" stroke="#868e96" stroke-width="0.8" opacity="0.5"/>
+<path d="M 734 366 C 742.64 366, 744.08 340, 752.0 340 C 759.92 340, 761.36 366, 770.0 366 C 778.64 366, 780.08 336, 788.0 336 C 795.92 336, 797.36 366, 806 366" fill="none" stroke="#2780e3" stroke-width="2"/>
+<rect x="114" y="64" width="712" height="88" rx="14" fill="none" stroke="#f0ad4e" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="838" y="110.0" font-size="12.5" font-style="italic" fill="#b07d2b">nights: one</text>
+<text x="838" y="126.0" font-size="12.5" font-style="italic" fill="#b07d2b">shared pattern</text>
+<rect x="114" y="152" width="506" height="156" rx="14" fill="none" stroke="#2e8540" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="128" y="294" font-size="12.5" font-style="italic" fill="#2e8540">weekday daytime</text>
+<rect x="622" y="152" width="204" height="242" rx="14" fill="none" stroke="#d9230f" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="634" y="376" font-size="12.5" font-style="italic" fill="#d9230f">weekends</text>
+<text x="120" y="442" font-size="13" fill="#5a5e62">Intervals whose statistics turn out similar are merged, so the cell judges each moment against its own kind of time.</text>
+</svg>

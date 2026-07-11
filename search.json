@@ -4,7 +4,49 @@
     "href": "index.html",
     "title": "Parallax",
     "section": "",
-    "text": "The Tripwire Patent\n\n\n\npatents\n\npublic-safety\n\n\n\nUS 12,634,398 — how one 911 call can teach nearby sensors what an emergency looks like.\n\n\n\n\n\nJul 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nAnatomy of Learning, and Downsides of Being a Second-Hand Thinker\n\n\n\nthinking\n\nlearning\n\n\n\n\n\n\n\n\n\nJun 25, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Learning Normal\n\n\n\npatents\n\ncomputer-vision\n\n\n\nUS 11,302,117 — cameras that learn what usual looks like, cell by cell and hour by hour, so the unusual can point itself out.\n\n\n\n\n\nJul 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Tripwire Patent\n\n\n\npatents\n\npublic-safety\n\n\n\nUS 12,634,398 — how one 911 call can teach nearby sensors what an emergency looks like.\n\n\n\n\n\nJul 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nAnatomy of Learning, and Downsides of Being a Second-Hand Thinker\n\n\n\nthinking\n\nlearning\n\n\n\n\n\n\n\n\n\nJun 25, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2026-07-09-learning-normal/index.html",
+    "href": "posts/2026-07-09-learning-normal/index.html",
+    "title": "Learning Normal",
+    "section": "",
+    "text": "A guard in front of a wall of monitors is paid to notice the one moment in a week when something odd crosses a lens, and that moment looks a great deal like every uneventful hour around it. The two examples in our filing are that kind of moment: a person running through a crowded park, a speeding vehicle on a highway. Both are easy to miss live and obvious in hindsight.\nThe usual fix is to write rules. Draw a line on the image and alert when something crosses it, alert when a car appears where cars should not be. Rules work until the scene changes, and someone has to imagine every rule in advance. That is the same trap I wrote about in the tripwire patent: the events nobody predefined are exactly the ones that slip through.\nMy patent, US 11,302,117 B2 (grant PDF), takes the opposite route: it does not try to define unusual at all. The camera learns what usual looks like, everywhere in its view, and unusual is whatever the scene has not been doing."
+  },
+  {
+    "objectID": "posts/2026-07-09-learning-normal/index.html#cell-by-cell",
+    "href": "posts/2026-07-09-learning-normal/index.html#cell-by-cell",
+    "title": "Learning Normal",
+    "section": "Cell by cell",
+    "text": "Cell by cell\nThe scene is divided into a grid of cells, and statistics are kept per class of object, in effect one grid for people and another for vehicles. Each cell learns how many objects are typically in it, how fast they move, in which directions. The input is not the video itself but the metadata the analytics already produce, the class, position and velocity of each tracked object. We built detection to run on the metadata alone, without touching the images again. That makes it cheap enough to run everywhere at once, and it works the same on a live feed and on video recorded years ago.\n\n\n  \n\nOne metric, two cells. The road cell's count climbs, the corner cell's stays at zero, and the anomaly is a zero that just became one. The same bookkeeping works for speed and direction.\n\nStatistics this local catch what one model for the whole scene would average away. A car at forty kilometers an hour is background to the road cells and an alarm two cells over, where the vehicle statistics have never recorded anything at all. Fifty people spread across a plaza is an ordinary afternoon to the person grid; the same fifty packed into one corner cell is a crowd forming. And nobody tells the system which cells are road and which are sidewalk. The statistics diverge on their own, and our filing dwells on this: clusters of small person-dense cells reveal the sidewalk, high consistent speeds reveal the road, aligned trajectories reveal the paths. The geography of the scene falls out of the models."
+  },
+  {
+    "objectID": "posts/2026-07-09-learning-normal/index.html#normal-depends-on-the-clock",
+    "href": "posts/2026-07-09-learning-normal/index.html#normal-depends-on-the-clock",
+    "title": "Learning Normal",
+    "section": "Normal depends on the clock",
+    "text": "Normal depends on the clock\nA loading dock at 2 pm and the same dock at 2 am are different places. So each cell keeps separate statistics for separate stretches of the week, Monday 8 to 9 am, Wednesday 5 to 6 pm, and a moment is judged against the statistics for its own stretch.\n\n\n  \n\nThe same cell, three different normals: rush hour, the middle of the night, a weekend morning.\n\nStretches whose statistics turn out alike are then merged into shared patterns, weekday mornings, nights, weekends. Normal is always normal for here and for now: a person at the dock on Tuesday afternoon is background, the same person on Sunday at 3 am stands out.\n\n\n  \n\nOne cell's week. Similar intervals merge into shared patterns, so each moment is judged against its own kind of time."
+  },
+  {
+    "objectID": "posts/2026-07-09-learning-normal/index.html#where-it-went",
+    "href": "posts/2026-07-09-learning-normal/index.html#where-it-went",
+    "title": "Learning Normal",
+    "section": "Where it went",
+    "text": "Where it went\nThis one did not stay on paper. It shipped in Avigilon cameras as Unusual Motion Detection, and the filing’s own figures show the product: a search screen where an operator filters a day of footage down to the moments of unusual speed, unusual direction, presence where there is usually nothing, absence where there is usually motion. The models take correction too, dismiss a false alarm and the statistics behind it adjust. It is also my most built-upon patent: forty patent families cite it so far.\nThis was joint work with Peter Venetianer at Avigilon. Provisional filed April 2019, granted April 2022. Looking back, the conviction that carried into the tripwire patent years later started here: the metadata is enough, and learned normal beats predefined rules."
+  },
+  {
+    "objectID": "posts/2026-06-25-anatomy-of-learning/index.html",
+    "href": "posts/2026-06-25-anatomy-of-learning/index.html",
+    "title": "Anatomy of Learning, and Downsides of Being a Second-Hand Thinker",
+    "section": "",
+    "text": "Growing up, I had a constant need of understanding how objects worked, I was constantly curious, was good at math in my peer group and dug my heels in to understand the core elements of any topic.\nThere though when I hit a wall for long time to learn a more complex topic, I had to make concessions on asking about the why, and accepting what was told as truth, that's just how it works and proceeding to use this assumed bedrock to then build the concepts atop.\nThis particularly happened to keep the pace with the fire hose of syllabus coming towards me, the need to keep with the pace of learning the course for the tests and an incomplete and immature system to digest the syllabus with a pin or a bookmark.\nNow as I am older and am learning purely for the sake of understanding and out of curiosity for my selfish wants. I want to learn the concepts to their depth. I am not bound by a deadline on within which I have to learn, rather am bound by my limited time — limitations bring out efficiency. I hope to make use of my limited time well by making this an efficient use of time."
+  },
+  {
+    "objectID": "posts/2026-06-25-anatomy-of-learning/index.html#downside-of-second-hand-thinking",
+    "href": "posts/2026-06-25-anatomy-of-learning/index.html#downside-of-second-hand-thinking",
+    "title": "Anatomy of Learning, and Downsides of Being a Second-Hand Thinker",
+    "section": "Downside of Second-Hand Thinking",
+    "text": "Downside of Second-Hand Thinking\n\nBe a source, not a relay. — Grant Sanderson\n\nBy not understanding a topic completely and relying on another person’s explanation, I will not understand the topic at hand. I have not played with it enough to find the nook and cranny of the thought, the way the concept grows and expands, the beauty of it or where its weaknesses lie and where it would collapse. All these aspects are fun to understand, and give a different perspective to the topic at hand as well as a different view of the world."
   },
   {
     "objectID": "posts/2026-07-07-the-tripwire-patent/index.html",
@@ -26,20 +68,6 @@
     "title": "The Tripwire Patent",
     "section": "Why I find it elegant",
     "text": "Why I find it elegant\nA tripwire armed this way is narrow on purpose. It is tied to a place, to a kind of incident, and to sensor readings that accompanied a real emergency. The camera is never asked to decide what an emergency is in general, which is the version of the problem nobody knows how to solve. It is asked whether what it sees now resembles the thing a human already declared an emergency, and that is just a similarity check.\nThe wire also does not have to stay where it was laid. The trigger can be copied to similar sensors in similar buildings, an office tower, a plant with the same smart-building sensors, so a lesson learned once arms tripwires in many places. Our filing sketches the far end of this too: the accumulated incidents and their sensor readings become training data for a model that learns which readings deserve a response.\n\n\n\nOne incident arms many tripwires.\n\n\nThis was joint work with my co-inventors Emmy Beltre, Kaveh Malakuti and Mariya Bondareva at Motorola Solutions. Filed September 2023, granted May 2026. The word set, the response actions and the garage-style scenario above are the examples from the patent itself."
-  },
-  {
-    "objectID": "posts/2026-06-25-anatomy-of-learning/index.html",
-    "href": "posts/2026-06-25-anatomy-of-learning/index.html",
-    "title": "Anatomy of Learning, and Downsides of Being a Second-Hand Thinker",
-    "section": "",
-    "text": "Growing up, I had a constant need of understanding how objects worked, I was constantly curious, was good at math in my peer group and dug my heels in to understand the core elements of any topic.\nThere though when I hit a wall for long time to learn a more complex topic, I had to make concessions on asking about the why, and accepting what was told as truth, that's just how it works and proceeding to use this assumed bedrock to then build the concepts atop.\nThis particularly happened to keep the pace with the fire hose of syllabus coming towards me, the need to keep with the pace of learning the course for the tests and an incomplete and immature system to digest the syllabus with a pin or a bookmark.\nNow as I am older and am learning purely for the sake of understanding and out of curiosity for my selfish wants. I want to learn the concepts to their depth. I am not bound by a deadline on within which I have to learn, rather am bound by my limited time — limitations bring out efficiency. I hope to make use of my limited time well by making this an efficient use of time."
-  },
-  {
-    "objectID": "posts/2026-06-25-anatomy-of-learning/index.html#downside-of-second-hand-thinking",
-    "href": "posts/2026-06-25-anatomy-of-learning/index.html#downside-of-second-hand-thinking",
-    "title": "Anatomy of Learning, and Downsides of Being a Second-Hand Thinker",
-    "section": "Downside of Second-Hand Thinking",
-    "text": "Downside of Second-Hand Thinking\n\nBe a source, not a relay. — Grant Sanderson\n\nBy not understanding a topic completely and relying on another person’s explanation, I will not understand the topic at hand. I have not played with it enough to find the nook and cranny of the thought, the way the concept grows and expands, the beauty of it or where its weaknesses lie and where it would collapse. All these aspects are fun to understand, and give a different perspective to the topic at hand as well as a different view of the world."
   },
   {
     "objectID": "about.html",
