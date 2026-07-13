@@ -59,6 +59,15 @@ Stretches whose statistics turn out alike are then merged into shared patterns, 
 
 ## Where it went
 
-This one did not stay on paper. It shipped in Avigilon cameras as Unusual Motion Detection, and the filing's own figures show the product: a search screen where an operator filters a day of footage down to the moments of unusual speed, unusual direction, presence where there is usually nothing, absence where there is usually motion. The models take correction too, dismiss a false alarm and the statistics behind it adjust. It is also my most built-upon patent: forty patent families cite it so far.
+This one did not stay on paper. It shipped in Avigilon's H5A cameras as [Unusual Activity Detection](https://support.avigilon.com/s/article/Video-ACC-Unusual-Activity-Detection?language=en_US): object-aware in the same sense as the filing, watching for people and vehicles at unusual speeds or in unusual places, and searchable after the fact, an operator can filter a day of footage down to just the moments that broke the pattern. The models take correction too, dismiss a false alarm and the statistics behind it adjust. It is also my most built-upon patent: forty patent families cite it so far.
+
+```{=html}
+<figure>
+<video controls preload="metadata" style="width:100%; border-radius:8px;" aria-label="Avigilon's narrated demo of Unusual Activity Detection in ACC 7, showing the feature flagging and searching atypical events, streamed from Avigilon's resource library.">
+  <source src="https://d1vy0qa05cdjr5.cloudfront.net/9370ff1d-ddbd-40e6-9fd1-2b67ccb34ede/Resource%20Library%20Specific/How%20To%20Videos/ACC/ACC%207%20Unusual%20Activity%20Detection%20Use%20Case.mp4" type="video/mp4">
+</video>
+<figcaption>Avigilon's own demo of Unusual Activity Detection in ACC 7 (streamed from <a href="https://support.avigilon.com/s/article/Video-ACC-Unusual-Activity-Detection?language=en_US">Avigilon's support library</a>).</figcaption>
+</figure>
+```
 
 This was joint work with Peter Venetianer at Avigilon. Provisional filed April 2019, granted April 2022. Looking back, the conviction that carried into the tripwire patent years later started here: the metadata is enough, and learned normal beats predefined rules.
