@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
       else { e.target.pause(); }
     });
   }, { threshold: 0.5 });
-  vids.forEach(function (v) { obs.observe(v); });
+  vids.forEach(function (v) { v.muted = true; obs.observe(v); });
 });
 </script>
 ```
