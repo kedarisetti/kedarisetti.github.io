@@ -54,11 +54,24 @@
 <h2 class="anchored" data-anchor-id="where-it-went">Where it went</h2>
 <p>This one did not stay on paper. It shipped in Avigilon’s H5A cameras as <a href="https://support.avigilon.com/s/article/Video-ACC-Unusual-Activity-Detection?language=en_US">Unusual Activity Detection</a>: object-aware in the same sense as the filing, watching for people and vehicles at unusual speeds or in unusual places, and searchable after the fact, an operator can filter a day of footage down to just the moments that broke the pattern. The models take correction too, dismiss a false alarm and the statistics behind it adjust. It is also my most built-upon patent: forty patent families cite it so far.</p>
 <figure class="figure">
-<video controls="" preload="metadata" style="width:100%; border-radius:8px;" aria-label="Avigilon's narrated demo of Unusual Activity Detection in ACC 7, showing the feature flagging and searching atypical events, streamed from Avigilon's resource library.">
+<video class="play-in-view" controls="" muted="" loop="" playsinline="" preload="metadata" style="width:100%; border-radius:8px;" aria-label="Avigilon's narrated demo of Unusual Activity Detection in ACC 7, showing the feature flagging and searching atypical events, streamed from Avigilon's resource library. Plays muted and looping when scrolled into view; unmute with the controls.">
   <source src="https://d1vy0qa05cdjr5.cloudfront.net/9370ff1d-ddbd-40e6-9fd1-2b67ccb34ede/Resource%20Library%20Specific/How%20To%20Videos/ACC/ACC%207%20Unusual%20Activity%20Detection%20Use%20Case.mp4" type="video/mp4">
 </video>
-<figcaption>Avigilon's own demo of Unusual Activity Detection in ACC 7 (streamed from <a href="https://support.avigilon.com/s/article/Video-ACC-Unusual-Activity-Detection?language=en_US">Avigilon's support library</a>).</figcaption>
+<figcaption>Avigilon's own demo of Unusual Activity Detection in ACC 7 (streamed from <a href="https://support.avigilon.com/s/article/Video-ACC-Unusual-Activity-Detection?language=en_US">Avigilon's support library</a>). Unmute for the narration.</figcaption>
 </figure>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var vids = document.querySelectorAll("video.play-in-view");
+  if (!("IntersectionObserver" in window)) { return; }
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.play().catch(function () {}); }
+      else { e.target.pause(); }
+    });
+  }, { threshold: 0.5 });
+  vids.forEach(function (v) { obs.observe(v); });
+});
+</script>
 <p>This was joint work with Peter Venetianer at Avigilon. Provisional filed April 2019, granted April 2022. Looking back, the conviction that carried into the tripwire patent years later started here: the metadata is enough, and learned normal beats predefined rules.</p>
 
 
