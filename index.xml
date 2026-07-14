@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
       else { e.target.pause(); }
     });
   }, { threshold: 0.5 });
-  vids.forEach(function (v) { obs.observe(v); });
+  vids.forEach(function (v) { v.muted = true; obs.observe(v); });
 });
 </script>
 <p>This was joint work with Peter Venetianer at Avigilon. Provisional filed April 2019, granted April 2022. Looking back, the conviction that carried into the tripwire patent years later started here: the metadata is enough, and learned normal beats predefined rules.</p>
