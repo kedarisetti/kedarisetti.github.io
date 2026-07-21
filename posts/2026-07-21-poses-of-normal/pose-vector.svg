@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 360" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#868e96"/></marker></defs>
+<text x="470" y="40" text-anchor="middle" font-size="15" font-weight="bold" fill="#373a3c">a person becomes a handful of numbers</text>
+<rect x="70" y="80" width="150" height="230" rx="4" fill="none" stroke="#868e96" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="145.0" y1="129.0" x2="145.0" y2="141.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="145.0" y1="141.0" x2="134.0" y2="143.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="145.0" y1="141.0" x2="156.0" y2="143.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="134.0" y1="143.0" x2="130.0" y2="159.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="130.0" y1="159.0" x2="129.0" y2="175.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="156.0" y1="143.0" x2="160.0" y2="159.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="160.0" y1="159.0" x2="161.0" y2="175.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="145.0" y1="141.0" x2="145.0" y2="171.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="145.0" y1="171.0" x2="137.0" y2="173.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="145.0" y1="171.0" x2="153.0" y2="173.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="137.0" y1="173.0" x2="136.0" y2="195.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="136.0" y1="195.0" x2="135.0" y2="217.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="153.0" y1="173.0" x2="154.0" y2="195.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<line x1="154.0" y1="195.0" x2="155.0" y2="217.0" stroke="#2780e3" stroke-width="3.6" stroke-linecap="round"/>
+<circle cx="145.0" cy="129.0" r="5.1" fill="#2780e3"/>
+<circle cx="145.0" cy="141.0" r="3.6" fill="#2780e3"/>
+<circle cx="134.0" cy="143.0" r="3.6" fill="#2780e3"/>
+<circle cx="156.0" cy="143.0" r="3.6" fill="#2780e3"/>
+<circle cx="130.0" cy="159.0" r="3.6" fill="#2780e3"/>
+<circle cx="160.0" cy="159.0" r="3.6" fill="#2780e3"/>
+<circle cx="129.0" cy="175.0" r="3.6" fill="#2780e3"/>
+<circle cx="161.0" cy="175.0" r="3.6" fill="#2780e3"/>
+<circle cx="145.0" cy="171.0" r="3.6" fill="#2780e3"/>
+<circle cx="137.0" cy="173.0" r="3.6" fill="#2780e3"/>
+<circle cx="153.0" cy="173.0" r="3.6" fill="#2780e3"/>
+<circle cx="136.0" cy="195.0" r="3.6" fill="#2780e3"/>
+<circle cx="154.0" cy="195.0" r="3.6" fill="#2780e3"/>
+<circle cx="135.0" cy="217.0" r="3.6" fill="#2780e3"/>
+<circle cx="155.0" cy="217.0" r="3.6" fill="#2780e3"/>
+<text x="145" y="335" text-anchor="middle" font-size="12.5" fill="#5a5e62">detected person, skeletal lines</text>
+<line x1="228" y1="195" x2="300" y2="195" stroke="#868e96" stroke-width="2" marker-end="url(#a)"/>
+<rect x="320" y="95" width="300" height="205" rx="8" fill="#2780e3" opacity="0.06"/>
+<text x="470" y="120" text-anchor="middle" font-size="13" font-weight="bold" fill="#1c5da8">pose vector</text>
+<text x="342" y="145" font-size="13" fill="#373a3c">head</text>
+<text x="600" y="145" text-anchor="end" font-size="13" font-family="monospace" fill="#5a5e62">(0.50, 0.08)</text>
+<text x="342" y="167" font-size="13" fill="#373a3c">shoulders</text>
+<text x="600" y="167" text-anchor="end" font-size="13" font-family="monospace" fill="#5a5e62">(0.43, 0.22)</text>
+<text x="342" y="189" font-size="13" fill="#373a3c">elbows</text>
+<text x="600" y="189" text-anchor="end" font-size="13" font-family="monospace" fill="#5a5e62">(0.39, 0.38)</text>
+<text x="342" y="211" font-size="13" fill="#373a3c">wrists</text>
+<text x="600" y="211" text-anchor="end" font-size="13" font-family="monospace" fill="#5a5e62">(0.38, 0.55)</text>
+<text x="342" y="233" font-size="13" fill="#373a3c">hips</text>
+<text x="600" y="233" text-anchor="end" font-size="13" font-family="monospace" fill="#5a5e62">(0.50, 0.53)</text>
+<text x="342" y="255" font-size="13" fill="#373a3c">knees</text>
+<text x="600" y="255" text-anchor="end" font-size="13" font-family="monospace" fill="#5a5e62">(0.46, 0.74)</text>
+<text x="342" y="277" font-size="13" fill="#373a3c">ankles</text>
+<text x="600" y="277" text-anchor="end" font-size="13" font-family="monospace" fill="#5a5e62">(0.45, 0.95)</text>
+<line x1="628" y1="195" x2="700" y2="195" stroke="#868e96" stroke-width="2" marker-end="url(#a)"/>
+<circle cx="800" cy="195" r="8" fill="#2780e3"/>
+<text x="800" y="230" text-anchor="middle" font-size="13" fill="#373a3c">one point in</text>
+<text x="800" y="248" text-anchor="middle" font-size="13" fill="#373a3c">pose space</text>
+<text x="470" y="345" text-anchor="middle" font-size="12" fill="#868e96">US 11,386,713 B2 · joints of the arms, legs, spine and head, as coordinates</text>
+</svg>

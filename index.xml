@@ -10,7 +10,62 @@
 <atom:link href="https://kedarisetti.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Dharanish Kedarisetti</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Thu, 09 Jul 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 21 Jul 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>The Poses of Normal</title>
+  <link>https://kedarisetti.github.io/posts/2026-07-21-poses-of-normal/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Watch a workplace kitchen through a camera for a week and the human body only makes a few shapes in it. People stand at the counter, sit at the tables, walk in and out. The angles of the arms and legs repeat, over and over, because the room asks for the same handful of postures. Then one afternoon someone is on the floor, and that shape has never appeared before.</p>
+<p>That is the whole idea of this patent. Instead of teaching a camera the long list of things that can go wrong, teach it the short list of shapes a body normally makes in a given room, and let anything far from that list raise its hand. My patent with Teresa Dankel, Patrick Henson and Aral Sarrafi, <a href="https://patents.google.com/patent/US11386713B2/en">US 11,386,713 B2</a> (<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11386713">grant PDF</a>), does that with pose.</p>
+<figure class="figure">
+<video autoplay="" muted="" loop="" playsinline="" controls="" style="width:100%; border-radius:8px;" aria-label="Animation styled as a security camera feed of a workplace kitchen, with a timestamp and a REC indicator. People walk in through a door, stand at a counter, and sit at a table, each wrapped in a green detection box labeled with their pose, standing, sitting or walking, while a learned normal panel fills with those three shapes. Then the person at the counter collapses to the floor, gets a red box labeled unusual pose while the seated person stays green, and the camera raises an alert.">
+  <source src="kitchen-feed.mp4" type="video/mp4">
+</video>
+<figcaption>The camera learns the room's usual shapes, then flags the one it has never seen.</figcaption>
+</figure>
+<section id="a-body-as-a-handful-of-numbers" class="level2">
+<h2 class="anchored" data-anchor-id="a-body-as-a-handful-of-numbers">A body as a handful of numbers</h2>
+<p>The first step is to stop looking at pixels and start looking at posture. A neural network finds each person in view and lays a skeleton over them, lines that follow the arms bending at the elbow, the legs bending at the knee, the spine, the head. The coordinates of those joints, gathered up, are the person’s pose vector: a compact numerical description of the shape they are making, and nothing else. Not who they are, not what they are wearing, just the geometry of the body.</p>
+<figure class="figure">
+<video autoplay="" muted="" loop="" playsinline="" controls="" style="width:100%; border-radius:8px;" aria-label="Animation. A skeleton draws itself over a detected person, bone by bone, then its joints fly out one at a time to fill a pose vector, a list of coordinates for head, shoulders, elbows, wrists, hips, knees and ankles. The whole list then collapses into a single dot labeled one point in pose space.">
+  <source src="pose-vector.mp4" type="video/mp4">
+</video>
+<figcaption>A person, their skeleton, and the pose vector it becomes.</figcaption>
+</figure>
+<p>Working in pose space instead of pixel space is what makes the rest cheap. Two numbers per joint is a tiny thing to store and compare, it runs on the camera itself, and it sidesteps a privacy problem: the system reasons about how a body is arranged without needing to recognize whose body it is.</p>
+</section>
+<section id="learning-the-shapes-a-room-asks-for" class="level2">
+<h2 class="anchored" data-anchor-id="learning-the-shapes-a-room-asks-for">Learning the shapes a room asks for</h2>
+<p>Point the camera at the room and let it collect poses. Cluster them, and the clusters are the room’s normal postures: a knot of standing poses, a knot of sitting poses, a knot of walking poses, each with a center and a radius that says how much variation still counts as that posture.</p>
+<p>One detail in the filing I am still fond of. A cluster only becomes part of normal if enough poses landed in it. A shape that showed up once or twice during training forms a tiny cluster, and tiny clusters are thrown away before the system goes live. The rare posture does not get quietly baptized as normal just because the camera happened to see it once.</p>
+<figure class="figure">
+<video autoplay="" muted="" loop="" playsinline="" controls="" style="width:100%; border-radius:8px;" aria-label="Animation. Green dots stream in and settle into three clusters, each with a small skeleton badge, labeled standing, sitting at a table, and walking through, each ringed by a dashed circle marked center plus radius r. A tiny two-dot cluster forms and is crossed out, labeled too rare, dropped from normal. Then a red skeleton appears upright, collapses to the floor, and becomes an outlier dot far from every cluster, with dashed distance lines reaching it and an arrow to a box reading alert.">
+  <source src="pose-clusters.mp4" type="video/mp4">
+</video>
+<figcaption>The postures a room repeats form clusters; a fall falls outside all of them.</figcaption>
+</figure>
+</section>
+<section id="near-means-fine-far-means-look" class="level2">
+<h2 class="anchored" data-anchor-id="near-means-fine-far-means-look">Near means fine, far means look</h2>
+<p>Once it is running, every new pose is a point measured against those clusters. Close to a cluster center, within its radius, and the pose is just another instance of a posture the room already knows, so it gets folded in and the center shifts a little to account for it. The normal keeps learning. But when a pose sits beyond the radius of every cluster, far from standing, sitting and walking alike, it is a shape the room has not made before, and the system raises an alert: a flashing box around the person, a message to a phone or a workstation, a video clip of the moment.</p>
+<p>The distance threshold is a dial, not a fixed line. Set it at the cluster radius and you get one sensitivity; widen it to 1.2 times the radius and fewer poses trip it; tighten it to half and more do. The filing also gates the clusters by time, so a posture normal for the middle of a workday is not automatically normal at three in the morning, and describes a second scoring path that treats each cluster as a probability distribution and asks how likely the pose is under all of them at once.</p>
+<p>The reason this one matters more to me than its security framing suggests is the shape it is best at catching. A person who has fallen, collapsed, or is lying where people do not lie makes a pose unlike any a healthy room produces. The same math that flags an intruder’s crouch flags a medical emergency, and the camera that was watching for one can call for help with the other.</p>
+<p>This was joint work with my co-inventors Teresa Dankel, Patrick Henson and Aral Sarrafi at Motorola Solutions. Filed May 2020, granted July 2022. It shares both its inventors and its instinct with <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">the tripwire patent</a> that came later: learn what normal looks like here, then watch for the departure.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>patents</category>
+  <category>computer-vision</category>
+  <guid>https://kedarisetti.github.io/posts/2026-07-21-poses-of-normal/</guid>
+  <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://kedarisetti.github.io/posts/2026-07-21-poses-of-normal/pose-space.svg" medium="image" type="image/svg+xml"/>
+</item>
 <item>
   <title>Learning Normal</title>
   <link>https://kedarisetti.github.io/posts/2026-07-09-learning-normal/</link>
