@@ -12,6 +12,10 @@ resources:
   - pose-space.svg
 ---
 
+::: {.patent-why}
+**Anomaly detection that reads body language.** It turns each person into a skeleton and learns, on its own, the postures a room normally sees. The same model that catches an intruder frozen in a crouch catches someone collapsed on the floor, a security feature that doubles as a call for help.
+:::
+
 ::: {.callout-note appearance="simple"}
 These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · [Learning Normal](../2026-07-09-learning-normal/index.qmd) · [Vector Search, 2018](../2026-07-14-vector-search-2018/index.qmd) · **The Poses of Normal**.
 :::

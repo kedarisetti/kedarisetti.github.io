@@ -12,6 +12,10 @@ resources:
   - week-patterns.svg
 ---
 
+::: {.patent-why}
+**A camera that learns "normal" by itself.** Point it at a scene and it works out, unsupervised, what ordinary activity there looks like, then flags whatever departs from it, with no rules written by hand. It shipped as Avigilon's Unusual Activity Detection, and it is the patent of mine others have built on most, forty and counting.
+:::
+
 ::: {.callout-note appearance="simple"}
 These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · **Learning Normal** · [Vector Search, 2018](../2026-07-14-vector-search-2018/index.qmd) · [The Poses of Normal](../2026-07-21-poses-of-normal/index.qmd).
 :::

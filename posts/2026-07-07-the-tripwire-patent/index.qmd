@@ -6,6 +6,10 @@ categories: [patents, public-safety]
 image: mechanism-flow.svg
 ---
 
+::: {.patent-why}
+**An alarm that writes its own trigger.** Most emergency systems only fire on rules set up in advance. This one takes a real 911 incident, learns the pattern of sensor readings around it, and escalates on its own when that pattern comes back. Motorola named it its Top Invention of the Year.
+:::
+
 ::: {.callout-note appearance="simple"}
 These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: **The Tripwire Patent** · [Learning Normal](../2026-07-09-learning-normal/index.qmd) · [Vector Search, 2018](../2026-07-14-vector-search-2018/index.qmd) · [The Poses of Normal](../2026-07-21-poses-of-normal/index.qmd).
 :::
