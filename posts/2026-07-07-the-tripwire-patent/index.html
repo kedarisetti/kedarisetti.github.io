@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c98d9d0b3b0a085d3ddf71e6e91476d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6ac2aec46ad7f46b16024ee4409aa65c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -160,6 +163,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <strong>The Tripwire Patent</strong> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a>.</p>
+</div>
+</div>
+</div>
 <p>Picture an explosion in a parking garage. The people nearby do exactly what you would hope. Two of them drag a man clear of the smoke, one starts CPR, the rest run for safety. Nobody calls 911, because everyone who saw it has their hands full or is getting out. The call comes minutes later, from a woman who dialed once she felt safe. Those are long minutes in an emergency.</p>
 <p>The garage had cameras. They recorded everything from the first frame, and they did nothing with it, because a camera has no way of knowing that what it just saw is worth summoning a fire brigade. The usual fix is to pre-program alarm systems to detect specific events, and that works only for the events someone thought to predefine. The ones nobody imagined in advance are exactly the ones that slip through.</p>
 <p>This is the problem my patent goes after. It was granted this May as <a href="https://patents.google.com/patent/US20250112995A1/en">US 12,634,398 B2</a> (<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12634398">grant PDF</a>), and the invention won Motorola’s Top Invention of the Year award for 2021.</p>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c98d9d0b3b0a085d3ddf71e6e91476d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6ac2aec46ad7f46b16024ee4409aa65c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -161,6 +164,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">The Tripwire Patent</a> · <strong>Learning Normal</strong> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a>.</p>
+</div>
+</div>
+</div>
 <p>A guard in front of a wall of monitors is paid to notice the one moment in a week when something odd crosses a lens, and that moment looks a great deal like every uneventful hour around it. The two examples in our filing are that kind of moment: a person running through a crowded park, a speeding vehicle on a highway. Both are easy to miss live and obvious in hindsight.</p>
 <p>The usual fix is to write rules. Draw a line on the image and alert when something crosses it, alert when a car appears where cars should not be. Rules work until the scene changes, and someone has to imagine every rule in advance. That is the same trap I wrote about in <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">the tripwire patent</a>: the events nobody predefined are exactly the ones that slip through.</p>
 <p>My patent, <a href="https://patents.google.com/patent/US11302117B2/en">US 11,302,117 B2</a> (<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11302117">grant PDF</a>), takes the opposite route: it does not try to define unusual at all. The camera learns what usual looks like, everywhere in its view, and unusual is whatever the scene has not been doing.</p>

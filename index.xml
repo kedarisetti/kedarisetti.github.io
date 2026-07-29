@@ -9,7 +9,7 @@
 <link>https://kedarisetti.github.io/</link>
 <atom:link href="https://kedarisetti.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Dharanish Kedarisetti</description>
-<generator>quarto-1.9.38</generator>
+<generator>quarto-1.10.18</generator>
 <lastBuildDate>Tue, 21 Jul 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>The Poses of Normal</title>
@@ -19,6 +19,16 @@
 
 
 
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">The Tripwire Patent</a> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <strong>The Poses of Normal</strong>.</p>
+</div>
+</div>
+</div>
 <p>Watch a workplace kitchen through a camera for a week and the human body only makes a few shapes in it. People stand at the counter, sit at the tables, walk in and out. The angles of the arms and legs repeat, over and over, because the room asks for the same handful of postures. Then one afternoon someone is on the floor, and that shape has never appeared before.</p>
 <p>That is the whole idea of this patent. Instead of teaching a camera the long list of things that can go wrong, teach it the short list of shapes a body normally makes in a given room, and let anything far from that list raise its hand. My patent with Teresa Dankel, Patrick Henson and Aral Sarrafi, <a href="https://patents.google.com/patent/US11386713B2/en">US 11,386,713 B2</a> (<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11386713">grant PDF</a>), does that with pose.</p>
 <figure class="figure">
@@ -67,6 +77,64 @@
   <media:content url="https://kedarisetti.github.io/posts/2026-07-21-poses-of-normal/pose-space.svg" medium="image" type="image/svg+xml"/>
 </item>
 <item>
+  <title>Vector Search, 2018</title>
+  <link>https://kedarisetti.github.io/posts/2026-07-14-vector-search-2018/</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">The Tripwire Patent</a> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <strong>Vector Search, 2018</strong> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a>.</p>
+</div>
+</div>
+</div>
+<p>An operator is looking for someone. One reference image, a still from a lobby camera, goes into appearance search, and the system returns sightings that look similar: the same person by the elevators, someone in a similar jacket at the loading dock, a false hit or two. The operator stars the true ones and searches again, and the results get better, because the query now knows the person from four angles instead of one. Star by star, the search sharpens.</p>
+<p>It also gets heavier. Every starred image is a feature vector, and every vector is another query against a database holding millions of them. By the time the operator has starred forty sightings across a dozen cameras, the refine button is asking for forty searches and a merge. Somewhere around there the feature stops feeling instant, and an operator who has to wait stops refining.</p>
+<p>My patent with Nicholas Alcock and Peter Venetianer, <a href="https://patents.google.com/patent/US11386284B2/en">US 11,386,284 B2</a> (<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11386284">grant PDF</a>), is about keeping that loop fast: cluster the starred vectors, keep one representative per cluster, and search with those.</p>
+<section id="the-stack-before-the-names" class="level2">
+<h2 class="anchored" data-anchor-id="the-stack-before-the-names">The stack, before the names</h2>
+<p>It is worth pausing on what the filing takes for granted, because in 2018 none of it had the names it has now. The cameras carried a neural chip that cut out images of people as they moved through a scene. A convolutional network, a Siamese architecture trained with a contrastive loss, turned each image into a feature vector, a numerical fingerprint of appearance, normalized to unit length. The vectors were indexed and stored in a database alongside the video. Searching meant taking a query vector and evaluating its distance to every stored vector in the time range, exact nearest neighbor, and the filing describes the approximate variant too, hashing-based, faster, able to miss true matches. An embedding model, a vector database, the exact-versus-approximate tradeoff: the whole kit, running inside security cameras, years before any of it was a product category.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://kedarisetti.github.io/posts/2026-07-14-vector-search-2018/stack-2018.svg" class="img-fluid figure-img" alt="A pipeline diagram: a person walks past a camera, the camera cuts out an image of them, a Siamese CNN with contrastive loss produces a numerical fingerprint of unit length, it is indexed in a database with the video, and search is nearest neighbor, exact or approximate. A dashed row underneath gives the names these acquired later: edge AI, detection, embedding model, an embedding, a vector database, ANN search."></p>
+<figcaption>The pipeline as filed, with a second row of names it acquired later.</figcaption>
+</figure>
+</div>
+</section>
+<section id="one-representative-per-look" class="level2">
+<h2 class="anchored" data-anchor-id="one-representative-per-look">One representative per look</h2>
+<p>The invention sits on the query side. Forty starred sightings of one person are not forty independent pieces of information. They bunch: a cluster of him facing the camera in the lobby, a cluster from behind in the parking garage, a cluster in the jacket he wore only that morning. Sightings within a bunch return nearly the same matches, so searching with all of them buys redundancy at full price.</p>
+<p>So when the starred set outgrows the compute budget, the filing clusters its vectors, k-medoid in the main embodiment, and searches with one representative per cluster. The representative can be chosen for what it shows, a clear face, a full body, or a recent sighting over a stale one, or it can simply be the cluster’s medoid. Medoids over means for a plain reason: a medoid is an actual image someone starred, not an arithmetic ghost, and the average of unit-length vectors does not even stay unit length. Forty queries become three or four, and the refine loop feels instant again.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://kedarisetti.github.io/posts/2026-07-14-vector-search-2018/glimpse-clusters.svg" class="img-fluid figure-img" alt="A scatter of starred sightings as dots, bunched into three dashed clusters labeled facing the camera in the lobby, from behind in the parking garage, and the morning jacket. One dot in each cluster is marked with a star, and only the three starred medoids send arrows to a database cylinder holding millions of stored vectors, labeled three queries, one per look. Faint gray lines from every dot to the database are labeled not one per sighting."></p>
+<figcaption>Forty sightings, three looks, three queries.</figcaption>
+</figure>
+</div>
+</section>
+<section id="what-aged-well-and-what-did-not" class="level2">
+<h2 class="anchored" data-anchor-id="what-aged-well-and-what-did-not">What aged well, and what did not</h2>
+<p>Reading it back in 2026, the part that aged best is the shape of the problem: queries made of many vectors, and the need to prune them without losing what they know. That problem came back with force, multi-vector retrieval, multi-query RAG, prototype selection, every system that condenses a set of embeddings before paying for search. The part that aged least is the arithmetic that motivated us: modern indexes answer a single query over millions of vectors in about a millisecond, so the forty-search budget that hurt in 2018 barely registers now. The pruning survives anyway, because collections grew faster than indexes got clever, and because redundant queries cost money even when they are fast.</p>
+<p>The system around this is Avigilon’s Appearance Search, and the star-and-refine loop in the filing’s figures is that product’s own workflow. Filed September 2018 as a provisional, granted July 2022. Twenty-five patent families cite it so far.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>patents</category>
+  <category>computer-vision</category>
+  <category>search</category>
+  <guid>https://kedarisetti.github.io/posts/2026-07-14-vector-search-2018/</guid>
+  <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://kedarisetti.github.io/posts/2026-07-14-vector-search-2018/glimpse-clusters.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
   <title>Learning Normal</title>
   <link>https://kedarisetti.github.io/posts/2026-07-09-learning-normal/</link>
   <description><![CDATA[ 
@@ -74,6 +142,16 @@
 
 
 
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">The Tripwire Patent</a> · <strong>Learning Normal</strong> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a>.</p>
+</div>
+</div>
+</div>
 <p>A guard in front of a wall of monitors is paid to notice the one moment in a week when something odd crosses a lens, and that moment looks a great deal like every uneventful hour around it. The two examples in our filing are that kind of moment: a person running through a crowded park, a speeding vehicle on a highway. Both are easy to miss live and obvious in hindsight.</p>
 <p>The usual fix is to write rules. Draw a line on the image and alert when something crosses it, alert when a car appears where cars should not be. Rules work until the scene changes, and someone has to imagine every rule in advance. That is the same trap I wrote about in <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">the tripwire patent</a>: the events nobody predefined are exactly the ones that slip through.</p>
 <p>My patent, <a href="https://patents.google.com/patent/US11302117B2/en">US 11,302,117 B2</a> (<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11302117">grant PDF</a>), takes the opposite route: it does not try to define unusual at all. The camera learns what usual looks like, everywhere in its view, and unusual is whatever the scene has not been doing.</p>
@@ -147,6 +225,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <strong>The Tripwire Patent</strong> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a>.</p>
+</div>
+</div>
+</div>
 <p>Picture an explosion in a parking garage. The people nearby do exactly what you would hope. Two of them drag a man clear of the smoke, one starts CPR, the rest run for safety. Nobody calls 911, because everyone who saw it has their hands full or is getting out. The call comes minutes later, from a woman who dialed once she felt safe. Those are long minutes in an emergency.</p>
 <p>The garage had cameras. They recorded everything from the first frame, and they did nothing with it, because a camera has no way of knowing that what it just saw is worth summoning a fire brigade. The usual fix is to pre-program alarm systems to detect specific events, and that works only for the events someone thought to predefine. The ones nobody imagined in advance are exactly the ones that slip through.</p>
 <p>This is the problem my patent goes after. It was granted this May as <a href="https://patents.google.com/patent/US20250112995A1/en">US 12,634,398 B2</a> (<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12634398">grant PDF</a>), and the invention won Motorola’s Top Invention of the Year award for 2021.</p>
