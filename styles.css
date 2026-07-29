@@ -1,1 +1,18 @@
 /* Custom styles */
+
+.patent-why {
+  border-left: 4px solid #2780e3;
+  background: #f4f8fe;
+  padding: 0.9rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.3rem 0 1.6rem;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.patent-why strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #1c5da8;
+  margin-bottom: 0.35rem;
+}

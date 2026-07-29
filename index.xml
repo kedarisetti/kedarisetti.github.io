@@ -19,6 +19,9 @@
 
 
 
+<div class="patent-why">
+<p><strong>Anomaly detection that reads body language.</strong> It turns each person into a skeleton and learns, on its own, the postures a room normally sees. The same model that catches an intruder frozen in a crouch catches someone collapsed on the floor, a security feature that doubles as a call for help.</p>
+</div>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -84,6 +87,9 @@
 
 
 
+<div class="patent-why">
+<p><strong>Search a video archive by resemblance.</strong> Give it one photo of a person and it finds everyone in the footage who looks like them, fast enough to use while you wait. That was 2018, built on the idea underneath today’s vector databases, before they had the name.</p>
+</div>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -142,6 +148,9 @@
 
 
 
+<div class="patent-why">
+<p><strong>A camera that learns “normal” by itself.</strong> Point it at a scene and it works out, unsupervised, what ordinary activity there looks like, then flags whatever departs from it, with no rules written by hand. It shipped as Avigilon’s Unusual Activity Detection, and it is the patent of mine others have built on most, forty and counting.</p>
+</div>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -225,6 +234,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+<div class="patent-why">
+<p><strong>An alarm that writes its own trigger.</strong> Most emergency systems only fire on rules set up in advance. This one takes a real 911 incident, learns the pattern of sensor readings around it, and escalates on its own when that pattern comes back. Motorola named it its Top Invention of the Year.</p>
+</div>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
