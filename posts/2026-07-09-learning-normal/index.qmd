@@ -12,6 +12,10 @@ resources:
   - week-patterns.svg
 ---
 
+::: {.callout-note appearance="simple"}
+These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · **Learning Normal** · [Vector Search, 2018](../2026-07-14-vector-search-2018/index.qmd) · [The Poses of Normal](../2026-07-21-poses-of-normal/index.qmd).
+:::
+
 A guard in front of a wall of monitors is paid to notice the one moment in a week when something odd crosses a lens, and that moment looks a great deal like every uneventful hour around it. The two examples in our filing are that kind of moment: a person running through a crowded park, a speeding vehicle on a highway. Both are easy to miss live and obvious in hindsight.
 
 The usual fix is to write rules. Draw a line on the image and alert when something crosses it, alert when a car appears where cars should not be. Rules work until the scene changes, and someone has to imagine every rule in advance. That is the same trap I wrote about in [the tripwire patent](../2026-07-07-the-tripwire-patent/index.qmd): the events nobody predefined are exactly the ones that slip through.
