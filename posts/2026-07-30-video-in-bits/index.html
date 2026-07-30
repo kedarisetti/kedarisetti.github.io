@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-07-07">
-<meta name="description" content="US 12,634,398 — closing the minutes between an emergency and the first 911 call.">
+<meta name="dcterms.date" content="2026-07-30">
+<meta name="description" content="US 12,443,654 — turning movement, crowding, and time into bit patterns a computer can match at a glance.">
 
-<title>The Tripwire Patent – Parallax</title>
+<title>Video, in Bits – Parallax</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -121,8 +121,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#let-the-call-teach-the-sensors" id="toc-let-the-call-teach-the-sensors" class="nav-link active" data-scroll-target="#let-the-call-teach-the-sensors">Let the call teach the sensors</a></li>
-  <li><a href="#why-i-find-it-elegant" id="toc-why-i-find-it-elegant" class="nav-link" data-scroll-target="#why-i-find-it-elegant">Why I find it elegant</a></li>
+  <li><a href="#an-event-as-a-handful-of-bits" id="toc-an-event-as-a-handful-of-bits" class="nav-link active" data-scroll-target="#an-event-as-a-handful-of-bits">An event as a handful of bits</a></li>
+  <li><a href="#similar-things-share-bits" id="toc-similar-things-share-bits" class="nav-link" data-scroll-target="#similar-things-share-bits">Similar things share bits</a></li>
+  <li><a href="#where-it-happened" id="toc-where-it-happened" class="nav-link" data-scroll-target="#where-it-happened">Where it happened</a></li>
+  <li><a href="#and-when" id="toc-and-when" class="nav-link" data-scroll-target="#and-when">And when</a></li>
+  <li><a href="#one-long-row" id="toc-one-long-row" class="nav-link" data-scroll-target="#one-long-row">One long row</a></li>
+  <li><a href="#search-by-example" id="toc-search-by-example" class="nav-link" data-scroll-target="#search-by-example">Search by example</a></li>
+  <li><a href="#or-just-one-corner-of-it" id="toc-or-just-one-corner-of-it" class="nav-link" data-scroll-target="#or-just-one-corner-of-it">Or just one corner of it</a></li>
+  <li><a href="#why-bits" id="toc-why-bits" class="nav-link" data-scroll-target="#why-bits">Why bits</a></li>
   </ul>
 </nav>
     </div>
@@ -131,16 +137,17 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The Tripwire Patent</h1>
+<h1 class="title">Video, in Bits</h1>
   <div class="quarto-categories">
     <div class="quarto-category">patents</div>
-    <div class="quarto-category">public-safety</div>
+    <div class="quarto-category">computer-vision</div>
+    <div class="quarto-category">search</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    US 12,634,398 — closing the minutes between an emergency and the first 911 call.
+    US 12,443,654 — turning movement, crowding, and time into bit patterns a computer can match at a glance.
   </div>
 </div>
 
@@ -151,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 7, 2026</p>
+      <p class="date">July 30, 2026</p>
     </div>
   </div>
   
@@ -164,55 +171,95 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="patent-why">
-<p><strong>An alarm that writes its own trigger.</strong> Most emergency systems only fire on rules set up in advance. This one takes a real 911 incident, learns the pattern of sensor readings around it, and escalates on its own when that pattern comes back. Motorola named it its Top Invention of the Year.</p>
+<p><strong>Search security video by example.</strong> Point at one moment, a person going the wrong way down a corridor, and it finds every other moment like it across weeks of footage. Each event becomes a pattern of bits, arranged so that similar events share bits, which turns the search into little more than counting.</p>
 </div>
-<p>Picture an explosion in a parking garage. The people nearby do exactly what you would hope. Two of them drag a man clear of the smoke, one starts CPR, the rest run for safety. Nobody calls 911, because everyone who saw it has their hands full or is getting out. The call comes minutes later, from a woman who dialed once she felt safe. Those are long minutes in an emergency.</p>
-<p>The garage had cameras. They recorded everything from the first frame, and they did nothing with it, because a camera has no way of knowing that what it just saw is worth summoning a fire brigade. The usual fix is to pre-program alarm systems to detect specific events, and that works only for the events someone thought to predefine. The ones nobody imagined in advance are exactly the ones that slip through.</p>
-<p>This is the problem my patent goes after. It was granted this May as <a href="https://patents.google.com/patent/US20250112995A1/en">US 12,634,398 B2</a> (<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12634398">grant PDF</a>), and the invention won Motorola’s Top Invention of the Year award for 2021.</p>
+<p>Somewhere there is a week of video and a person who has to find one thing in it: the moment that matches one they already have. A figure moving against the flow, a crowd forming where a crowd should not, a car going the wrong way. They know it when they see it. The trouble is the seeing, because finding it means scrubbing, hours of ordinary footage for the few seconds that are not.</p>
+<p>You can put a rules engine in front of the video, but rules have to be written, and writing the rule for “something like this” is exactly the thing nobody quite knows how to do in advance. My patent with Yanyan Hu, <a href="https://patents.google.com/patent/US12443654B2/en">US 12,443,654 B2</a> (<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12443654">grant PDF</a>), takes a different route: it turns every event in the video into a short pattern of bits, and makes searching a matter of comparing those patterns.</p>
+<section id="an-event-as-a-handful-of-bits" class="level2">
+<h2 class="anchored" data-anchor-id="an-event-as-a-handful-of-bits">An event as a handful of bits</h2>
+<p>The camera’s analytics already describe what happens in a scene as metadata: a person walking, a vehicle turning, a crowd gathering. The idea is to reduce each of those events to a bit pattern. Movement gets a few bits, one for each direction it might go. Occupancy gets a bit that flips on when the crowd passes some size. Stitch the pieces together and a moment of video becomes a short binary vector, a row of ones and zeros that says, in the plainest possible terms, what was going on.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="top-invention-trophy.jpeg" class="img-fluid figure-img" style="width:55.0%" alt="Me holding a green hexagonal Motorola trophy engraved Top Invention of the Year 2021, with the Motorola Solutions box in my other hand."></p>
-<figcaption>The trophy.</figcaption>
+<p><img src="encode.svg" class="img-fluid figure-img" alt="A scene showing a person moving downward and a small crowd. The movement maps to a six-bit direction vector with the down bit set, and the crowd maps to a single occupancy bit set for twenty or more people. The two are concatenated into one seven-bit binary vector labeled one event, one bit pattern."></p>
+<figcaption>An event, reduced to a bit pattern.</figcaption>
 </figure>
 </div>
-<section id="let-the-call-teach-the-sensors" class="level2">
-<h2 class="anchored" data-anchor-id="let-the-call-teach-the-sensors">Let the call teach the sensors</h2>
-<p>The idea is to use the 911 call, when it finally arrives, to teach the nearby sensors what mattered.</p>
-<p>When the call comes in, the system finds the sensors that could have seen the incident and pulls what they recorded around that time and place, including the minutes before. Software then distills that recording into something small and checkable. The concrete version in our filing: image recognition reduces the incident video to a set of words, {explosion, fire, car, people, scream}.</p>
-<p>From that summary the system arms what we called an alarm-escalating trigger. It has two parts. A condition, and it lives entirely in the metadata: new footage keeps getting tagged the same way, and the condition is that a new clip’s tags share at least four of those five words. And a response staged in advance for that kind of incident: notify the responders’ radios, alert the 911 call taker, open the emergency doors, sound the sirens.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="mechanism-flow.svg" class="img-fluid figure-img" alt="Six-panel storyboard. Panel one, a camera is already watching when the incident happens in its view. Panel two, it records everything and does nothing, having no way to know it matters. Panel three, minutes later someone safe calls 911 with the incident's time and place. Panel four, the call points back into the camera's recording and software tags what it saw with the words explosion, fire, car, people, scream. Panel five, the tags are tied back to the camera as an armed tripwire: if a new clip's tags share at least four of the five words, a staged response is ready, notify responders' radios, alert the call taker, open doors, sound sirens. Panel six, the camera keeps tagging what it sees, and when the tags match, the response starts on its own, no one has to call."></p>
-<figcaption>The mechanism, with the example from our filing.</figcaption>
-</figure>
-</div>
-<p>Then the sensors watch, in tag space rather than pixel space. The camera never compares images to images; it compares small sets of words. If a later clip’s tags meet the condition, the staged response fires. No one has to call.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="tripwire-timeline.svg" class="img-fluid figure-img" alt="Two timelines. In the first incident, the incident happens, cameras see everything and do nothing, minutes pass while witnesses help or flee, then a 911 call comes from someone who reached safety, and only then does the response begin. In the next incident, with the tripwire armed, similar readings appear, the tripwire fires, and the response begins almost immediately, before any call or without one at all."></p>
-<figcaption>The payoff, in time saved.</figcaption>
-</figure>
-</div>
-<p>That second timeline is the whole point. The first incident pays the cost of human judgement, one real 911 call, and converts it into a machine-checkable description of what an emergency looks like at this place. That is the payoff: the next time, a proper response can start before any notification from a witness, or without one at all.</p>
+<p>The whole video becomes a set of these vectors, one per interval, kept in an index. The interval length is about the only real knob: ten seconds keeps the index compact, one second keeps it precise.</p>
 </section>
-<section id="why-i-find-it-elegant" class="level2">
-<h2 class="anchored" data-anchor-id="why-i-find-it-elegant">Why I find it elegant</h2>
-<p>A tripwire armed this way is narrow on purpose. It is tied to a place, to a kind of incident, and to sensor readings that accompanied a real emergency. The camera is never asked to decide what an emergency is in general, which is the version of the problem nobody knows how to solve. It is asked whether what it sees now resembles the thing a human already declared an emergency, and that is just a similarity check.</p>
-<p>The wire also does not have to stay where it was laid. The trigger can be copied to similar sensors in similar buildings, an office tower, a plant with the same smart-building sensors, so a lesson learned once arms tripwires in many places. Our filing sketches the far end of this too: the accumulated incidents and their sensor readings become training data for a model that learns which readings deserve a response.</p>
-<div class="quarto-figure quarto-figure-center">
+<section id="similar-things-share-bits" class="level2">
+<h2 class="anchored" data-anchor-id="similar-things-share-bits">Similar things share bits</h2>
+<p>The encoding itself is worth pausing on. If you encode direction as one bit per direction, then “down” and “down and slightly left” share no bits at all, even though they are nearly the same thing. So the encoding is made to overlap instead: a direction is written as a small band of neighbouring bits, and a nearby direction’s band overlaps it. Two events that are alike now carry ones in the same places.</p>
 <figure class="figure">
-<p><img src="trigger-sharing.svg" class="img-fluid figure-img" alt="A building where the incident happened carries an armed trigger shield. Dashed arrows copy the trigger to two other buildings with similar sensors, another office and a plant across town, each now carrying a smaller shield and watching for the same condition."></p>
-<figcaption>One incident arms many tripwires.</figcaption>
+<video autoplay="" muted="" loop="" playsinline="" controls="" style="width:100%; border-radius:8px;" aria-label="Animation. A query bit pattern for movement that is down-ish appears. A similar clip's pattern appears below it, and the bits the two share light up in amber, counted as two shared bits and labeled close. A third clip moving up appears and shares no bits with the query, labeled far. A closing line notes that counting shared bits is a dot product, or cheaper still.">
+  <source src="shared-bits.mp4" type="video/mp4">
+</video>
+<figcaption>Similarity is just the bits two patterns share; nearby events overlap, opposite ones do not.</figcaption>
 </figure>
-</div>
-<p>This was joint work with my co-inventors Emmy Beltre, Kaveh Malakuti and Mariya Bondareva at Motorola Solutions. Filed September 2023, granted May 2026. The word set, the response actions and the garage-style scenario above are the examples from the patent itself.</p>
+<p>Once similarity is shared bits, comparing two events is just counting the bits they have in common, a dot product, or a cheaper bitwise operation still. There is no learned embedding and no model to train. The meaning is designed into where the bits fall, so that closeness in the world becomes closeness in the pattern. The same overlapping trick handles anything that wraps around: a compass direction, or the time of day, where eleven at night and one in the morning ought to sit near each other, and now do.</p>
+</section>
+<section id="where-it-happened" class="level2">
+<h2 class="anchored" data-anchor-id="where-it-happened">Where it happened</h2>
+<p>Location works the same way, through a stack of grids at different scales, from a single cell covering the whole scene down to a fine sixteen-by-sixteen. An event lights a cell at each scale, so you can ask for “movement anywhere” or “movement in that far corner” just by choosing how fine a grid to read.</p>
+<figure class="figure">
+<video autoplay="" muted="" loop="" playsinline="" controls="" style="width:100%; border-radius:8px;" aria-label="Animation. A rectangular scene holds a single figure in the lower-right. The scene is first one cell, the whole frame, then divides into a two-by-two grid, then four-by-four, then sixteen-by-sixteen. At each step the cell containing the figure is highlighted in green and shrinks around it, from the whole scene down to a single small cell. A closing line notes that a coarse grid asks anywhere, and a fine grid asks right there.">
+  <source src="multiscale-grid.mp4" type="video/mp4">
+</video>
+<figcaption>The same event, located at every scale. Choose how fine a grid to read, and you choose how precisely to pin the spot.</figcaption>
+</figure>
+</section>
+<section id="and-when" class="level2">
+<h2 class="anchored" data-anchor-id="and-when">And when</h2>
+<p>Time gets the same treatment, and it is where the overlap trick earns its keep, because time is full of moments that ought to feel close but look far apart on a clock. Late Sunday and early Monday belong together; so do the minute before midnight and the minute after. The filing writes a timestamp two ways. The plain way is one-hot, seven bits for the day of the week, twenty-four for the hour, where Tuesday is Tuesday and sits near nothing. That suits an exact match and nothing around it.</p>
+<p>The other way carries similarity. A moment in the week becomes a band of contiguous bits spread across neighbouring hours, so a late Tuesday evening and an early Wednesday morning share bits and score as close, while Tuesday and Monday, further off, share fewer. The band wraps at the ends, so Sunday night falls beside Monday morning and the last minute of a day beside the first. The same scheme at the scale of a single day puts an event at 9:55 in the evening nearer to one at 10:25 than to one at 9:05. Ask for “around this time” and you get the neighbourhood, not just the exact tick.</p>
+<figure class="figure">
+<video autoplay="" muted="" loop="" playsinline="" controls="" style="width:100%; border-radius:8px;" aria-label="Animation. A day drawn as a ring of twenty-four hour cells, with a lit band near midnight at the top, unrolls into a horizontal row of bits; because the band sat on the seam, it lands split across both ends of the row, and a dashed connector marks that the two ends are the same seam. The same is then shown for a week of seven days and a month of thirty days, each a circle unrolling into a row. A closing line notes it is the same trick at any period, and that near times share bits.">
+  <source src="time-unroll.mp4" type="video/mp4">
+</video>
+<figcaption>A moment in a cycle becomes a band of bits; unroll the circle and its two ends turn out to be neighbours. Shown for a day, a week, and a month.</figcaption>
+</figure>
+</section>
+<section id="one-long-row" class="level2">
+<h2 class="anchored" data-anchor-id="one-long-row">One long row</h2>
+<p>So far each piece is its own small pattern of bits: a direction, a crowd, a place, a time. The last step just lays them end to end. The time bits come first, then the bits for each cell of the grid, in a fixed order, and the whole lot is one long row. Because that order never changes, the bit in a given position always means the same thing, in every moment, across the whole index. That is what makes two moments comparable at all: line the rows up and count.</p>
+<figure class="figure">
+<video autoplay="" muted="" loop="" playsinline="" controls="" style="width:100%; border-radius:8px;" aria-label="Animation. A scene is divided into a two-by-two grid, with a person moving down in the top-right cell and a small crowd in the bottom-left cell. Each cell becomes a small group of bits, and a time segment plus the four cell segments slide together and line up into one long row, labeled time, cell 1, cell 2, cell 3, cell 4. A brace under the row reads one moment of video equals one row of bits, and a note adds that each piece keeps its place so a given bit always means the same thing.">
+  <source src="stack-vector.mp4" type="video/mp4">
+</video>
+<figcaption>Every piece — time, and each cell of the grid — stacks into one long vector, each in its fixed place.</figcaption>
+</figure>
+</section>
+<section id="search-by-example" class="level2">
+<h2 class="anchored" data-anchor-id="search-by-example">Search by example</h2>
+<p>Now the search that investigator wanted is easy to state. Take the moment you already have, read off its bit pattern, and compare it against every pattern in the index. Rank by how many bits they share. What comes back is a list of moments, most alike first, each with a score and a timestamp to jump to.</p>
+<figure class="figure">
+<video autoplay="" muted="" loop="" playsinline="" controls="" style="width:100%; border-radius:8px;" aria-label="Animation. A query frame of a person moving down becomes a bit pattern. An arrow labeled compare points to an event index drawn as a database cylinder holding every moment in bits. Three result frames come back ranked by similarity, the two most alike scored 0.95 and 0.89 in green, and the least alike scored 0.51. A closing line notes the results are ranked by shared bits, with scores from the filing's Fig. 9.">
+  <source src="search.mp4" type="video/mp4">
+</video>
+<figcaption>The query is an example, and the results come back ranked by shared bits.</figcaption>
+</figure>
+<p>Nobody had to write a rule for “a person going the wrong way.” The example is the query.</p>
+</section>
+<section id="or-just-one-corner-of-it" class="level2">
+<h2 class="anchored" data-anchor-id="or-just-one-corner-of-it">Or just one corner of it</h2>
+<p>Because the row is built in pieces, a query can be built the same way. You do not have to fill in every bit. Set only the bits you care about, a person moving down, in only the part of the scene that matters, the cell over the loading door, and leave the rest open. The comparison then counts matches only where you asked. “Someone going the wrong way through that door” becomes a query you compose rather than a rule you write, and the grid is what makes a place selectable at all: pick a cell, and the search is masked down to it.</p>
+<figure class="figure">
+<video autoplay="" muted="" loop="" playsinline="" controls="" style="width:100%; border-radius:8px;" aria-label="Animation. A scene is divided into a three-by-three grid, and the top-right cell is highlighted in amber and labeled only here, with a person moving down inside it. Below, a query vector of nine two-bit segments appears, one segment per cell. Only the segment for the highlighted cell is filled in blue; the rest are greyed out as wildcards. That active segment is boxed and labeled the only bits that matter, with an arrow tying it back to the highlighted cell. A note reads compose a query by stacking: fill the bits you care about, leave the rest open.">
+  <source src="mask-query.mp4" type="video/mp4">
+</video>
+<figcaption>Fill in the bits for one region and leave the rest open, and the search is masked down to that corner of the scene.</figcaption>
+</figure>
+</section>
+<section id="why-bits" class="level2">
+<h2 class="anchored" data-anchor-id="why-bits">Why bits</h2>
+<p>Feature vectors of floating-point numbers can do similarity search too, and an <a href="../../posts/2026-07-14-vector-search-2018/index.html">earlier patent of mine</a> did exactly that for appearance search. Bits buy something different. They are tiny to store and trivial to compare, a few machine instructions per event, which matters when the index holds every second of every camera for months. And because the similarity is built into the encoding rather than learned, you can read a pattern off and know what it means. It is the low-tech cousin of a vector database, and for a great many surveillance questions it is enough.</p>
+<p>This was joint work with Yanyan Hu at Motorola Solutions. Filed January 2023, granted October 2025.</p>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <strong>The Tripwire Patent</strong> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a> · <a href="../../posts/2026-07-30-video-in-bits/index.html">Video, in Bits</a>.</p>
+<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">The Tripwire Patent</a> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a> · <strong>Video, in Bits</strong>.</p>
 </div>
 </div>
 </div>
