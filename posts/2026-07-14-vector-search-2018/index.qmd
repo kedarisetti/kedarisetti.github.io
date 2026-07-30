@@ -40,5 +40,5 @@ Reading it back in 2026, the part that aged best is the shape of the problem: qu
 The system around this is Avigilon's Appearance Search, and the star-and-refine loop in the filing's figures is that product's own workflow. Filed September 2018 as a provisional, granted July 2022. Twenty-five patent families cite it so far.
 
 ::: {.callout-note appearance="simple"}
-These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · [Learning Normal](../2026-07-09-learning-normal/index.qmd) · **Vector Search, 2018** · [The Poses of Normal](../2026-07-21-poses-of-normal/index.qmd).
+These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · [Learning Normal](../2026-07-09-learning-normal/index.qmd) · **Vector Search, 2018** · [The Poses of Normal](../2026-07-21-poses-of-normal/index.qmd) · [Video, in Bits](../2026-07-30-video-in-bits/index.qmd).
 :::

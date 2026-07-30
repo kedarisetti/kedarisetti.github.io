@@ -70,5 +70,5 @@ The reason this one matters more to me than its security framing suggests is the
 This was joint work with my co-inventors Teresa Dankel, Patrick Henson and Aral Sarrafi at Motorola Solutions. Filed May 2020, granted July 2022. It shares both its inventors and its instinct with [the tripwire patent](../2026-07-07-the-tripwire-patent/index.qmd) that came later: learn what normal looks like here, then watch for the departure.
 
 ::: {.callout-note appearance="simple"}
-These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · [Learning Normal](../2026-07-09-learning-normal/index.qmd) · [Vector Search, 2018](../2026-07-14-vector-search-2018/index.qmd) · **The Poses of Normal**.
+These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · [Learning Normal](../2026-07-09-learning-normal/index.qmd) · [Vector Search, 2018](../2026-07-14-vector-search-2018/index.qmd) · **The Poses of Normal** · [Video, in Bits](../2026-07-30-video-in-bits/index.qmd).
 :::

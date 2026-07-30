@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 430" font-family="Helvetica, Arial, sans-serif">
+<text x="470" y="34" text-anchor="middle" font-size="15" font-weight="bold" fill="#373a3c">the trick: similar events share bits</text>
+<path d="M 195.9 102.9 L 193.3 83.1 A 128 128 0 0 1 226.7 83.1 L 224.1 102.9 A 108 108 0 0 0 195.9 102.9 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 224.1 102.9 L 226.7 83.1 A 128 128 0 0 1 259.0 91.7 L 251.3 110.2 A 108 108 0 0 0 224.1 102.9 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 251.3 110.2 L 259.0 91.7 A 128 128 0 0 1 287.9 108.5 L 275.7 124.3 A 108 108 0 0 0 251.3 110.2 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 275.7 124.3 L 287.9 108.5 A 128 128 0 0 1 311.5 132.1 L 295.7 144.3 A 108 108 0 0 0 275.7 124.3 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 295.7 144.3 L 311.5 132.1 A 128 128 0 0 1 328.3 161.0 L 309.8 168.7 A 108 108 0 0 0 295.7 144.3 Z" fill="#2780e3" stroke="#fff" stroke-width="1"/>
+<path d="M 309.8 168.7 L 328.3 161.0 A 128 128 0 0 1 336.9 193.3 L 317.1 195.9 A 108 108 0 0 0 309.8 168.7 Z" fill="#2780e3" stroke="#fff" stroke-width="1"/>
+<path d="M 317.1 195.9 L 336.9 193.3 A 128 128 0 0 1 336.9 226.7 L 317.1 224.1 A 108 108 0 0 0 317.1 195.9 Z" fill="#2780e3" stroke="#fff" stroke-width="1"/>
+<path d="M 317.1 224.1 L 336.9 226.7 A 128 128 0 0 1 328.3 259.0 L 309.8 251.3 A 108 108 0 0 0 317.1 224.1 Z" fill="#2780e3" stroke="#fff" stroke-width="1"/>
+<path d="M 309.8 251.3 L 328.3 259.0 A 128 128 0 0 1 311.5 287.9 L 295.7 275.7 A 108 108 0 0 0 309.8 251.3 Z" fill="#2780e3" stroke="#fff" stroke-width="1"/>
+<path d="M 295.7 275.7 L 311.5 287.9 A 128 128 0 0 1 287.9 311.5 L 275.7 295.7 A 108 108 0 0 0 295.7 275.7 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 275.7 295.7 L 287.9 311.5 A 128 128 0 0 1 259.0 328.3 L 251.3 309.8 A 108 108 0 0 0 275.7 295.7 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 251.3 309.8 L 259.0 328.3 A 128 128 0 0 1 226.7 336.9 L 224.1 317.1 A 108 108 0 0 0 251.3 309.8 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 224.1 317.1 L 226.7 336.9 A 128 128 0 0 1 193.3 336.9 L 195.9 317.1 A 108 108 0 0 0 224.1 317.1 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 195.9 317.1 L 193.3 336.9 A 128 128 0 0 1 161.0 328.3 L 168.7 309.8 A 108 108 0 0 0 195.9 317.1 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 168.7 309.8 L 161.0 328.3 A 128 128 0 0 1 132.1 311.5 L 144.3 295.7 A 108 108 0 0 0 168.7 309.8 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 144.3 295.7 L 132.1 311.5 A 128 128 0 0 1 108.5 287.9 L 124.3 275.7 A 108 108 0 0 0 144.3 295.7 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 124.3 275.7 L 108.5 287.9 A 128 128 0 0 1 91.7 259.0 L 110.2 251.3 A 108 108 0 0 0 124.3 275.7 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 110.2 251.3 L 91.7 259.0 A 128 128 0 0 1 83.1 226.7 L 102.9 224.1 A 108 108 0 0 0 110.2 251.3 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 102.9 224.1 L 83.1 226.7 A 128 128 0 0 1 83.1 193.3 L 102.9 195.9 A 108 108 0 0 0 102.9 224.1 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 102.9 195.9 L 83.1 193.3 A 128 128 0 0 1 91.7 161.0 L 110.2 168.7 A 108 108 0 0 0 102.9 195.9 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 110.2 168.7 L 91.7 161.0 A 128 128 0 0 1 108.5 132.1 L 124.3 144.3 A 108 108 0 0 0 110.2 168.7 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 124.3 144.3 L 108.5 132.1 A 128 128 0 0 1 132.1 108.5 L 144.3 124.3 A 108 108 0 0 0 124.3 144.3 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 144.3 124.3 L 132.1 108.5 A 128 128 0 0 1 161.0 91.7 L 168.7 110.2 A 108 108 0 0 0 144.3 124.3 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 168.7 110.2 L 161.0 91.7 A 128 128 0 0 1 193.3 83.1 L 195.9 102.9 A 108 108 0 0 0 168.7 110.2 Z" fill="#eef1f4" stroke="#fff" stroke-width="1"/>
+<path d="M 295.3 198.8 L 313.1 196.4 A 104 104 0 0 1 313.1 223.6 L 295.3 221.2 A 86 86 0 0 0 295.3 198.8 Z" fill="#2e8540" stroke="#fff" stroke-width="1"/>
+<path d="M 295.3 221.2 L 313.1 223.6 A 104 104 0 0 1 306.1 249.8 L 289.5 242.9 A 86 86 0 0 0 295.3 221.2 Z" fill="#2e8540" stroke="#fff" stroke-width="1"/>
+<path d="M 289.5 242.9 L 306.1 249.8 A 104 104 0 0 1 292.5 273.3 L 278.2 262.4 A 86 86 0 0 0 289.5 242.9 Z" fill="#2e8540" stroke="#fff" stroke-width="1"/>
+<path d="M 278.2 262.4 L 292.5 273.3 A 104 104 0 0 1 273.3 292.5 L 262.4 278.2 A 86 86 0 0 0 278.2 262.4 Z" fill="#2e8540" stroke="#fff" stroke-width="1"/>
+<path d="M 262.4 278.2 L 273.3 292.5 A 104 104 0 0 1 249.8 306.1 L 242.9 289.5 A 86 86 0 0 0 262.4 278.2 Z" fill="#2e8540" stroke="#fff" stroke-width="1"/>
+<circle cx="210" cy="210" r="70" fill="#fff"/>
+<text x="210" y="206" text-anchor="middle" font-size="13" fill="#373a3c">direction, as</text>
+<text x="210" y="224" text-anchor="middle" font-size="13" fill="#373a3c">a band of bits</text>
+<text x="210" y="302" text-anchor="middle" font-size="12.5" fill="#2780e3">outer: one direction</text>
+<text x="210" y="320" text-anchor="middle" font-size="12.5" fill="#2e8540">inner: a nearby direction</text>
+<text x="440" y="95" font-size="13" fill="#373a3c">query, moving down-ish</text>
+<rect x="440" y="108" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="453.0" y="126.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="470" y="108" width="26" height="26" rx="3" fill="#2780e3" stroke="#c9ccd0" stroke-width="1"/>
+<text x="483.0" y="126.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#fff">1</text>
+<rect x="500" y="108" width="26" height="26" rx="3" fill="#2780e3" stroke="#c9ccd0" stroke-width="1"/>
+<text x="513.0" y="126.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#fff">1</text>
+<rect x="530" y="108" width="26" height="26" rx="3" fill="#2780e3" stroke="#c9ccd0" stroke-width="1"/>
+<text x="543.0" y="126.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#fff">1</text>
+<rect x="560" y="108" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="573.0" y="126.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="590" y="108" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="603.0" y="126.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="620" y="108" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="633.0" y="126.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="650" y="108" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="663.0" y="126.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<text x="440" y="175" font-size="13" fill="#2e8540">a similar clip: bands overlap</text>
+<rect x="440" y="188" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="453.0" y="206.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="470" y="188" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="483.0" y="206.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="500" y="188" width="26" height="26" rx="3" fill="#f0ad4e" stroke="#c9ccd0" stroke-width="1"/>
+<text x="513.0" y="206.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#fff">1</text>
+<rect x="530" y="188" width="26" height="26" rx="3" fill="#f0ad4e" stroke="#c9ccd0" stroke-width="1"/>
+<text x="543.0" y="206.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#fff">1</text>
+<rect x="560" y="188" width="26" height="26" rx="3" fill="#2780e3" stroke="#c9ccd0" stroke-width="1"/>
+<text x="573.0" y="206.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#fff">1</text>
+<rect x="590" y="188" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="603.0" y="206.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="620" y="188" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="633.0" y="206.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="650" y="188" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="663.0" y="206.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<text x="440" y="205" font-size="0" fill="#373a3c"></text>
+<text x="690" y="205" font-size="12.5" fill="#b07d2b">2 shared bits → close</text>
+<text x="440" y="258" font-size="13" fill="#d9230f">a clip moving up: no overlap</text>
+<rect x="440" y="271" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="453.0" y="289.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="470" y="271" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="483.0" y="289.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="500" y="271" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="513.0" y="289.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="530" y="271" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="543.0" y="289.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="560" y="271" width="26" height="26" rx="3" fill="#eef1f4" stroke="#c9ccd0" stroke-width="1"/>
+<text x="573.0" y="289.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#868e96">0</text>
+<rect x="590" y="271" width="26" height="26" rx="3" fill="#2780e3" stroke="#c9ccd0" stroke-width="1"/>
+<text x="603.0" y="289.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#fff">1</text>
+<rect x="620" y="271" width="26" height="26" rx="3" fill="#2780e3" stroke="#c9ccd0" stroke-width="1"/>
+<text x="633.0" y="289.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#fff">1</text>
+<rect x="650" y="271" width="26" height="26" rx="3" fill="#2780e3" stroke="#c9ccd0" stroke-width="1"/>
+<text x="663.0" y="289.0" text-anchor="middle" font-size="14" font-family="monospace" fill="#fff">1</text>
+<text x="690" y="288" font-size="12.5" fill="#d9230f">0 shared bits → far</text>
+<text x="590" y="335" text-anchor="middle" font-size="13.5" fill="#373a3c">similarity is just counting the bits two patterns share</text>
+<text x="470" y="400" text-anchor="middle" font-size="12" fill="#868e96">overlapping (cyclic) encoding: neighbours share bits, so nearness falls out of a dot product</text>
+</svg>
