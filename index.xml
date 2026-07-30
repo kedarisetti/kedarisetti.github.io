@@ -22,16 +22,6 @@
 <div class="patent-why">
 <p><strong>Anomaly detection that reads body language.</strong> It turns each person into a skeleton and learns, on its own, the postures a room normally sees. The same model that catches an intruder frozen in a crouch catches someone collapsed on the floor, a security feature that doubles as a call for help.</p>
 </div>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">The Tripwire Patent</a> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <strong>The Poses of Normal</strong>.</p>
-</div>
-</div>
-</div>
 <p>Watch a workplace kitchen through a camera for a week and the human body only makes a few shapes in it. People stand at the counter, sit at the tables, walk in and out. The angles of the arms and legs repeat, over and over, because the room asks for the same handful of postures. Then one afternoon someone is on the floor, and that shape has never appeared before.</p>
 <p>That is the whole idea of this patent. Instead of teaching a camera the long list of things that can go wrong, teach it the short list of shapes a body normally makes in a given room, and let anything far from that list raise its hand. My patent with Teresa Dankel, Patrick Henson and Aral Sarrafi, <a href="https://patents.google.com/patent/US11386713B2/en">US 11,386,713 B2</a> (<a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11386713">grant PDF</a>), does that with pose.</p>
 <figure class="figure">
@@ -68,6 +58,16 @@
 <p>The distance threshold is a dial, not a fixed line. Set it at the cluster radius and you get one sensitivity; widen it to 1.2 times the radius and fewer poses trip it; tighten it to half and more do. The filing also gates the clusters by time, so a posture normal for the middle of a workday is not automatically normal at three in the morning, and describes a second scoring path that treats each cluster as a probability distribution and asks how likely the pose is under all of them at once.</p>
 <p>The reason this one matters more to me than its security framing suggests is the shape it is best at catching. A person who has fallen, collapsed, or is lying where people do not lie makes a pose unlike any a healthy room produces. The same math that flags an intruder’s crouch flags a medical emergency, and the camera that was watching for one can call for help with the other.</p>
 <p>This was joint work with my co-inventors Teresa Dankel, Patrick Henson and Aral Sarrafi at Motorola Solutions. Filed May 2020, granted July 2022. It shares both its inventors and its instinct with <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">the tripwire patent</a> that came later: learn what normal looks like here, then watch for the departure.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">The Tripwire Patent</a> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <strong>The Poses of Normal</strong>.</p>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -89,16 +89,6 @@
 
 <div class="patent-why">
 <p><strong>Search a video archive by resemblance.</strong> Give it one photo of a person and it finds everyone in the footage who looks like them, fast enough to use while you wait. That was 2018, built on the idea underneath today’s vector databases, before they had the name.</p>
-</div>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">The Tripwire Patent</a> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <strong>Vector Search, 2018</strong> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a>.</p>
-</div>
-</div>
 </div>
 <p>An operator is looking for someone. One reference image, a still from a lobby camera, goes into appearance search, and the system returns sightings that look similar: the same person by the elevators, someone in a similar jacket at the loading dock, a false hit or two. The operator stars the true ones and searches again, and the results get better, because the query now knows the person from four angles instead of one. Star by star, the search sharpens.</p>
 <p>It also gets heavier. Every starred image is a feature vector, and every vector is another query against a database holding millions of them. By the time the operator has starred forty sightings across a dozen cameras, the refine button is asking for forty searches and a merge. Somewhere around there the feature stops feeling instant, and an operator who has to wait stops refining.</p>
@@ -128,6 +118,16 @@
 <h2 class="anchored" data-anchor-id="what-aged-well-and-what-did-not">What aged well, and what did not</h2>
 <p>Reading it back in 2026, the part that aged best is the shape of the problem: queries made of many vectors, and the need to prune them without losing what they know. That problem came back with force, multi-vector retrieval, multi-query RAG, prototype selection, every system that condenses a set of embeddings before paying for search. The part that aged least is the arithmetic that motivated us: modern indexes answer a single query over millions of vectors in about a millisecond, so the forty-search budget that hurt in 2018 barely registers now. The pruning survives anyway, because collections grew faster than indexes got clever, and because redundant queries cost money even when they are fast.</p>
 <p>The system around this is Avigilon’s Appearance Search, and the star-and-refine loop in the filing’s figures is that product’s own workflow. Filed September 2018 as a provisional, granted July 2022. Twenty-five patent families cite it so far.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">The Tripwire Patent</a> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <strong>Vector Search, 2018</strong> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a>.</p>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -150,16 +150,6 @@
 
 <div class="patent-why">
 <p><strong>A camera that learns “normal” by itself.</strong> Point it at a scene and it works out, unsupervised, what ordinary activity there looks like, then flags whatever departs from it, with no rules written by hand. It shipped as Avigilon’s Unusual Activity Detection, and it is the patent of mine others have built on most, forty and counting.</p>
-</div>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">The Tripwire Patent</a> · <strong>Learning Normal</strong> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a>.</p>
-</div>
-</div>
 </div>
 <p>A guard in front of a wall of monitors is paid to notice the one moment in a week when something odd crosses a lens, and that moment looks a great deal like every uneventful hour around it. The two examples in our filing are that kind of moment: a person running through a crowded park, a speeding vehicle on a highway. Both are easy to miss live and obvious in hindsight.</p>
 <p>The usual fix is to write rules. Draw a line on the image and alert when something crosses it, alert when a car appears where cars should not be. Rules work until the scene changes, and someone has to imagine every rule in advance. That is the same trap I wrote about in <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">the tripwire patent</a>: the events nobody predefined are exactly the ones that slip through.</p>
@@ -215,6 +205,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 <p>This was joint work with Peter Venetianer at Avigilon. Provisional filed April 2019, granted April 2022. Looking back, the conviction that carried into the tripwire patent years later started here: the metadata is enough, and learned normal beats predefined rules.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <a href="../../posts/2026-07-07-the-tripwire-patent/index.html">The Tripwire Patent</a> · <strong>Learning Normal</strong> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a>.</p>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -236,16 +236,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <div class="patent-why">
 <p><strong>An alarm that writes its own trigger.</strong> Most emergency systems only fire on rules set up in advance. This one takes a real 911 incident, learns the pattern of sensor readings around it, and escalates on its own when that pattern comes back. Motorola named it its Top Invention of the Year.</p>
-</div>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <strong>The Tripwire Patent</strong> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a>.</p>
-</div>
-</div>
 </div>
 <p>Picture an explosion in a parking garage. The people nearby do exactly what you would hope. Two of them drag a man clear of the smoke, one starts CPR, the rest run for safety. Nobody calls 911, because everyone who saw it has their hands full or is getting out. The call comes minutes later, from a woman who dialed once she felt safe. Those are long minutes in an emergency.</p>
 <p>The garage had cameras. They recorded everything from the first frame, and they did nothing with it, because a camera has no way of knowing that what it just saw is worth summoning a fire brigade. The usual fix is to pre-program alarm systems to detect specific events, and that works only for the events someone thought to predefine. The ones nobody imagined in advance are exactly the ones that slip through.</p>
@@ -287,6 +277,16 @@ document.addEventListener("DOMContentLoaded", function () {
 </figure>
 </div>
 <p>This was joint work with my co-inventors Emmy Beltre, Kaveh Malakuti and Mariya Bondareva at Motorola Solutions. Filed September 2023, granted May 2026. The word set, the response actions and the garage-style scenario above are the examples from the patent itself.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: <strong>The Tripwire Patent</strong> · <a href="../../posts/2026-07-09-learning-normal/index.html">Learning Normal</a> · <a href="../../posts/2026-07-14-vector-search-2018/index.html">Vector Search, 2018</a> · <a href="../../posts/2026-07-21-poses-of-normal/index.html">The Poses of Normal</a>.</p>
+</div>
+</div>
+</div>
 
 
 </section>
