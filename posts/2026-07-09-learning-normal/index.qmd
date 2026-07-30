@@ -1,6 +1,6 @@
 ---
 title: "Learning Normal"
-description: "US 11,302,117 — cameras that learn what usual looks like, cell by cell and hour by hour, so the unusual can point itself out."
+description: "US 11,302,117 — a different normal for every corner of the frame and every hour of the week."
 date: 2026-07-09
 categories: [patents, computer-vision]
 image: scene-grid.svg
@@ -14,10 +14,6 @@ resources:
 
 ::: {.patent-why}
 **A camera that learns "normal" by itself.** Point it at a scene and it works out, unsupervised, what ordinary activity there looks like, then flags whatever departs from it, with no rules written by hand. It shipped as Avigilon's Unusual Activity Detection, and it is the patent of mine others have built on most, forty and counting.
-:::
-
-::: {.callout-note appearance="simple"}
-These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · **Learning Normal** · [Vector Search, 2018](../2026-07-14-vector-search-2018/index.qmd) · [The Poses of Normal](../2026-07-21-poses-of-normal/index.qmd).
 :::
 
 A guard in front of a wall of monitors is paid to notice the one moment in a week when something odd crosses a lens, and that moment looks a great deal like every uneventful hour around it. The two examples in our filing are that kind of moment: a person running through a crowded park, a speeding vehicle on a highway. Both are easy to miss live and obvious in hindsight.
@@ -92,3 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 ```
 
 This was joint work with Peter Venetianer at Avigilon. Provisional filed April 2019, granted April 2022. Looking back, the conviction that carried into the tripwire patent years later started here: the metadata is enough, and learned normal beats predefined rules.
+
+::: {.callout-note appearance="simple"}
+These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · **Learning Normal** · [Vector Search, 2018](../2026-07-14-vector-search-2018/index.qmd) · [The Poses of Normal](../2026-07-21-poses-of-normal/index.qmd).
+:::

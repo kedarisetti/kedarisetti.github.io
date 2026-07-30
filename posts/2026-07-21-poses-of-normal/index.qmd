@@ -1,6 +1,6 @@
 ---
 title: "The Poses of Normal"
-description: "US 11,386,713 — teaching a camera the shapes a body usually makes in a room, so the shape of a person on the floor stands out."
+description: "US 11,386,713 — a body reduced to the geometry of its pose, where the unusual sits far from the usual."
 date: 2026-07-21
 categories: [patents, computer-vision]
 image: pose-space.svg
@@ -14,10 +14,6 @@ resources:
 
 ::: {.patent-why}
 **Anomaly detection that reads body language.** It turns each person into a skeleton and learns, on its own, the postures a room normally sees. The same model that catches an intruder frozen in a crouch catches someone collapsed on the floor, a security feature that doubles as a call for help.
-:::
-
-::: {.callout-note appearance="simple"}
-These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · [Learning Normal](../2026-07-09-learning-normal/index.qmd) · [Vector Search, 2018](../2026-07-14-vector-search-2018/index.qmd) · **The Poses of Normal**.
 :::
 
 Watch a workplace kitchen through a camera for a week and the human body only makes a few shapes in it. People stand at the counter, sit at the tables, walk in and out. The angles of the arms and legs repeat, over and over, because the room asks for the same handful of postures. Then one afternoon someone is on the floor, and that shape has never appeared before.
@@ -72,3 +68,7 @@ The distance threshold is a dial, not a fixed line. Set it at the cluster radius
 The reason this one matters more to me than its security framing suggests is the shape it is best at catching. A person who has fallen, collapsed, or is lying where people do not lie makes a pose unlike any a healthy room produces. The same math that flags an intruder's crouch flags a medical emergency, and the camera that was watching for one can call for help with the other.
 
 This was joint work with my co-inventors Teresa Dankel, Patrick Henson and Aral Sarrafi at Motorola Solutions. Filed May 2020, granted July 2022. It shares both its inventors and its instinct with [the tripwire patent](../2026-07-07-the-tripwire-patent/index.qmd) that came later: learn what normal looks like here, then watch for the departure.
+
+::: {.callout-note appearance="simple"}
+These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · [Learning Normal](../2026-07-09-learning-normal/index.qmd) · [Vector Search, 2018](../2026-07-14-vector-search-2018/index.qmd) · **The Poses of Normal**.
+:::

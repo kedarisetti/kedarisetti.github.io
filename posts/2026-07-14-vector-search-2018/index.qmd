@@ -1,6 +1,6 @@
 ---
 title: "Vector Search, 2018"
-description: "US 11,386,284 — appearance search, and making many-example queries cheap before the tooling had names."
+description: "US 11,386,284 — when a search is built from forty example images, which few do you actually send?"
 date: 2026-07-14
 categories: [patents, computer-vision, search]
 image: glimpse-clusters.svg
@@ -11,10 +11,6 @@ resources:
 
 ::: {.patent-why}
 **Search a video archive by resemblance.** Give it one photo of a person and it finds everyone in the footage who looks like them, fast enough to use while you wait. That was 2018, built on the idea underneath today's vector databases, before they had the name.
-:::
-
-::: {.callout-note appearance="simple"}
-These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · [Learning Normal](../2026-07-09-learning-normal/index.qmd) · **Vector Search, 2018** · [The Poses of Normal](../2026-07-21-poses-of-normal/index.qmd).
 :::
 
 An operator is looking for someone. One reference image, a still from a lobby camera, goes into appearance search, and the system returns sightings that look similar: the same person by the elevators, someone in a similar jacket at the loading dock, a false hit or two. The operator stars the true ones and searches again, and the results get better, because the query now knows the person from four angles instead of one. Star by star, the search sharpens.
@@ -42,3 +38,7 @@ So when the starred set outgrows the compute budget, the filing clusters its vec
 Reading it back in 2026, the part that aged best is the shape of the problem: queries made of many vectors, and the need to prune them without losing what they know. That problem came back with force, multi-vector retrieval, multi-query RAG, prototype selection, every system that condenses a set of embeddings before paying for search. The part that aged least is the arithmetic that motivated us: modern indexes answer a single query over millions of vectors in about a millisecond, so the forty-search budget that hurt in 2018 barely registers now. The pruning survives anyway, because collections grew faster than indexes got clever, and because redundant queries cost money even when they are fast.
 
 The system around this is Avigilon's Appearance Search, and the star-and-refine loop in the filing's figures is that product's own workflow. Filed September 2018 as a provisional, granted July 2022. Twenty-five patent families cite it so far.
+
+::: {.callout-note appearance="simple"}
+These posts are my attempt to explain my own patents in plain English, with the diagrams I wish the filings had. In the order I wrote them: [The Tripwire Patent](../2026-07-07-the-tripwire-patent/index.qmd) · [Learning Normal](../2026-07-09-learning-normal/index.qmd) · **Vector Search, 2018** · [The Poses of Normal](../2026-07-21-poses-of-normal/index.qmd).
+:::
